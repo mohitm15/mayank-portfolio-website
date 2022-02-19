@@ -1,0 +1,124 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 2rem;
+    padding: 1rem;
+
+    @media only screen and (max-width:640px){
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 60px);
+        grid-column-gap: 0.5rem;
+        grid-row-gap: 0.5rem;
+    }
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+    display:flex;
+    flex-direction:row;
+    align-content: center;
+    list-decoration:none;
+
+    @media only screen and (max-width:640px) {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+}
+
+.div2 {
+    grid-area: 1 / 2 / 2 / 4;
+    dislay:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    list-style:none;
+    @media only screen and (max-width:640px) {
+        grid-area:2 / 2 / 3 / 5;
+    }
+}
+
+.div3 {
+    grid-area: 1 / 6 / 1 / 6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @media only screen and (max-width:640px) {
+        align-items: center;
+        grid-area: 1 / 4 / 2 / 4;
+    }
+}
+
+.navlink {
+    font-size:1.7rem;
+    line-height: 32px;
+    color: whitesmoke;
+    transition: 0.4s ease;
+    
+    @media only screen and (max-width:640px) {
+        padding: 0.5rem;
+    }
+}
+
+.navlink:hover {
+    color: pink;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.contactdropdown {
+  border: none;
+  display: flex;
+  position: relative;
+  background: none;
+  font-size: 1.7rem;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  @media only screen and (max-width:640px) {
+    padding: 0.4rem 0;
+  }
+
+  @media only screen and (max-width:768px) {
+    padding: 0rem;
+  } 
+
+}
+
+.contactdropdown:focus {
+    outline:none;
+}
+
+.contactdropdown:hover {
+    color:pink;
+}
+
+.arrowdropdown {
+  margin-left: 8px;
+  display: flex;
+  align-self: center;
+  transition: 0.3s ease;
+
+  @media only screen and (max-width:640px) {
+    margin: 2px 0 0 2px;
+    width: 15px;
+  }
+}
+
+.arrowdropdown:hover {
+    opacity:1;
+}
+
+
+.socialicons {
+    transition: 0.3s ease;
+    color: white;
+}
+
+.socialicons:hover {
+    background-color: #212d45;
+    transform: scale(1.2);
+    cursor: pointer;
+}
