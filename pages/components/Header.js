@@ -1,5 +1,7 @@
-import React, { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
+import React from "react";
+import { Disclosure, Menu } from "@headlessui/react";
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import {
   AiFillLinkedin,
   AiFillYoutube,
@@ -16,11 +18,11 @@ const user = {
     "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
 };
 const navigation = [
-  { name: "Home", href: "/", current: true },
-  { name: "About", href: "#about", current: false },
-  { name: "Projects", href: "#projects", current: false },
-  { name: "Blogs", href: "#blogs", current: false },
-  { name: "Contacts", href: "#contact", current: false },
+  { name: "Home", href: "/", current: false, index:0 },
+  { name: "About", href: "/about", current: false, index:1 },
+  { name: "Projects", href: "projects", current: false, index:2 },
+  { name: "Blogs", href: "blogs", current: false, index:3 },
+  { name: "Contacts", href: "contact", current: false, index:4 },
 ];
 
 
@@ -28,6 +30,9 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 const Header = () => {
+
+
+
   return (
     <>
       <Disclosure as="nav" className="border-b-[1px] bg-[#021732] border-zinc-500">
@@ -44,27 +49,25 @@ const Header = () => {
                     />
                   </div>
                   <div className="hidden md:block">
-                    <div className="ml-10 flex items-baseline space-x-4">
+                    <div className="ml-10 flex items-baseline space-x-8">
                       {navigation.map((item) => (
+                        <Link href={item.href}>
                         <a
                           key={item.name}
-                          href={item.href}
-                          className={classNames(
-                            item.current
-                              ? "bg-gray-900 text-white"
-                              : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                            "px-3 py-2 rounded-md text-sm font-medium"
-                          )}
+                          onClick={()=>{item.current = true}}
+                          className="active:bg-gray-600 focus:text-white focus:bg-gray-600 active:text-white text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+                          
                           aria-current={item.current ? "page" : undefined}
                         >
                           {item.name}
                         </a>
+                        </Link>
                       ))}
                     </div>
                   </div>
                 </div>
                 <div className="hidden md:block">
-                  <div className="ml-4 flex items-center md:ml-6">
+                  <div className="ml-4 flex items-center md:ml-6 space-x-3">
                     <span className="p-1 rounded-lg ease-in duration-200 hover:bg-[#212d45] hover:scale-125 hover:cursor-pointer">
                       <a href="https://google.com">
                         <AiFillGithub className="h-7 w-7" aria-hidden="true" />
@@ -72,12 +75,12 @@ const Header = () => {
                     </span>
                     <span className="p-1 rounded-lg ease-in duration-200 hover:bg-[#212d45] hover:scale-125 hover:cursor-pointer">
                       <a href="https://google.com">
-                        <AiFillLinkedin size={33} />
+                        <AiFillLinkedin className="h-7 w-7" aria-hidden="true" />
                       </a>
                     </span>
                     <span className="p-1 rounded-lg ease-in duration-200 hover:bg-[#212d45] hover:scale-125 hover:cursor-pointer">
                       <a href="https://google.com">
-                        <AiFillYoutube size={33} />
+                        <AiFillYoutube className="h-7 w-7" aria-hidden="true" />
                       </a>
                     </span>
 
