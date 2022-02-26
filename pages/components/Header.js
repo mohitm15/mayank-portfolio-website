@@ -1,7 +1,7 @@
 import React from "react";
 import { Disclosure, Menu } from "@headlessui/react";
-import Link from 'next/link';
-import { useRouter } from 'next/router';
+import Link from "next/link";
+import { useRouter } from "next/router";
 import {
   AiFillLinkedin,
   AiFillYoutube,
@@ -10,32 +10,30 @@ import {
   AiFillBell,
   AiOutlinePlus,
 } from "react-icons/ai";
+import imageurl from '../../public/Ash.jpg';
 
 const user = {
   name: "Mohit Maroliya",
   email: "mmaroliya@gmail.com",
-  imageUrl:
-    "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
 };
 const navigation = [
-  { name: "Home", href: "/", current: false, index:0 },
-  { name: "About", href: "/about", current: false, index:1 },
-  { name: "Projects", href: "projects", current: false, index:2 },
-  { name: "Blogs", href: "blogs", current: false, index:3 },
-  { name: "Contacts", href: "contact", current: false, index:4 },
+  { name: "Home", href: "/", current: false, index: 0 },
+  { name: "About", href: "/about", current: false, index: 1 },
+  { name: "Projects", href: "projects", current: false, index: 2 },
+  { name: "Blogs", href: "blogs", current: false, index: 3 },
+  { name: "Contacts", href: "contact", current: false, index: 4 },
 ];
-
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 const Header = () => {
-
-
-
   return (
     <>
-      <Disclosure as="nav" className="border-b-[1px] bg-[#021732] border-zinc-500">
+      <Disclosure
+        as="nav"
+        className="border-b-[1px] bg-[#021732] border-zinc-500"
+      >
         {({ open }) => (
           <>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -52,15 +50,16 @@ const Header = () => {
                     <div className="ml-10 flex items-baseline space-x-8">
                       {navigation.map((item) => (
                         <Link href={item.href}>
-                        <a
-                          key={item.name}
-                          onClick={()=>{item.current = true}}
-                          className="active:bg-gray-600 focus:text-white focus:bg-gray-600 active:text-white text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium"
-                          
-                          aria-current={item.current ? "page" : undefined}
-                        >
-                          {item.name}
-                        </a>
+                          <a
+                            key={item.name}
+                            onClick={() => {
+                              item.current = true;
+                            }}
+                            className="active:bg-gray-600 focus:text-white focus:bg-gray-600 active:text-white text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+                            aria-current={item.current ? "page" : undefined}
+                          >
+                            {item.name}
+                          </a>
                         </Link>
                       ))}
                     </div>
@@ -75,7 +74,10 @@ const Header = () => {
                     </span>
                     <span className="p-1 rounded-lg ease-in duration-200 hover:bg-[#212d45] hover:scale-125 hover:cursor-pointer">
                       <a href="https://google.com">
-                        <AiFillLinkedin className="h-7 w-7" aria-hidden="true" />
+                        <AiFillLinkedin
+                          className="h-7 w-7"
+                          aria-hidden="true"
+                        />
                       </a>
                     </span>
                     <span className="p-1 rounded-lg ease-in duration-200 hover:bg-[#212d45] hover:scale-125 hover:cursor-pointer">
@@ -90,7 +92,7 @@ const Header = () => {
                           <span className="sr-only">Open user menu</span>
                           <img
                             className="h-8 w-8 rounded-full"
-                            src={user.imageUrl}
+                            src={imageurl}
                             alt=""
                           />
                         </Menu.Button>
@@ -98,7 +100,6 @@ const Header = () => {
                     </Menu>
                   </div>
                 </div>
-
 
                 <div className="-mr-2 flex md:hidden">
                   {/* Hamburger menu button */}
@@ -147,7 +148,7 @@ const Header = () => {
                   <div className="flex-shrink-0">
                     <img
                       className="h-10 w-10 rounded-full"
-                      src={user.imageUrl}
+                      src={imageurl}
                       alt=""
                     />
                   </div>
@@ -168,13 +169,10 @@ const Header = () => {
                   </button>
                 </div>
               </div>
-
             </Disclosure.Panel>
           </>
         )}
       </Disclosure>
-
-      
     </>
   );
 };

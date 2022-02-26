@@ -11,7 +11,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto  shadow">
           <div className="px-4 py-6 sm:px-0 flex flex-col lg:flex-row">
             <div className="max-w-4xl mx-auto sm:py-10  sm:px-6 lg:px-8 " >
-              <Image src={imgurl} width="325" height="405" />
+              <Image src={imgurl} width="325" height="405" className='opacity-80'/>
             </div>
             <div className="max-w-7xl mx-auto md:py-5 lg:py-20 px-4 sm:px-2 lg:px-2">
               <h2 className="text-4xl md:text-7xl xl:text-8xl leading-snug md:leading-snug xl:leading-relaxed w-full text-transparent bg-clip-text font-extrabold bg-gradient-to-r from-white to-sky-500/10 p-2">
