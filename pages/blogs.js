@@ -94,7 +94,7 @@ const Blogs = () => {
                   </div>
                   <div className="m-auto mt-3 xl:mt-10 text-center">
                     <button className="border-2 border-white p-2 xl:px-4 xl:py-3 uppercase text-sm xl:text-base lg:text-sm hover:bg-slate-700">
-                      <a href={element.link}>Read full post</a>
+                      <a href={element.link} target="_blank">Read full post</a>
                     </button>
                   </div>
                 </div>
