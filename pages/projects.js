@@ -2,8 +2,10 @@ import React from "react";
 import Header from "./components/Header";
 import imgurl from "../public/dog.jpg";
 import Image from "next/image";
-import { SiMongodb, SiPostman, SiReact } from "react-icons/si";
-import { FaNodeJs } from "react-icons/fa";
+import { SiBootstrap, SiJavascript, SiLichess, SiMongodb, SiPostman, SiReact, SiRedux, SiTailwindcss, SiWebauthn } from "react-icons/si";
+import { FaNodeJs, FaEye, FaHtml5, FaCss3, FaSpotify } from "react-icons/fa";
+import { HiCode } from "react-icons/hi";
+import { AiOutlineApi } from "react-icons/ai";
 
 const Projects = () => {
   return (
@@ -18,7 +20,7 @@ const Projects = () => {
               </h2>
             </div>
             <div className="p-5 border-2 border-red-400 flex flex-col lg:flex-col items-center justify-center ">
-              <div className="p-2 border-2 flex flex-col lg:flex-row items-center space-y-3 lg:space-y-0 lg:space-x-16 justify-center">
+              <div className="p-2 sm:p-10 border-2 flex flex-col lg:flex-row items-center space-y-3 lg:space-y-0 lg:space-x-16 justify-center">
                 {/* card1 */}
                 <div className="card w-full h-full bg-red-400 ">
                   <div
@@ -37,10 +39,7 @@ const Projects = () => {
                         ms-chatApp
                       </h5>
                       <p className="mb-3 font-normal text-xsm sm:text-base text-gray-700 dark:text-gray-400">
-                        Here are the biggest enterprise technology acquisitions
-                        of 2021 so far, in reverse chronological order.in
-                        reverse chronological order.in reverse chronological
-                        order.
+                      ms-chat-app is the macro version of ms-teams where you can form groups and can message & share images with different people. You can also customize the UI by yourself.
                       </p>
                       <hr className="m-auto text-black bg-black" />
                       <h3 className="text-sm sm:text-base text-black font-semibold">Technologies</h3>
@@ -58,12 +57,12 @@ const Projects = () => {
                           <SiPostman />
                         </span>
                       </div>
-                      <div className="flex flex-row justify-between mt-3  bg-slate-300">
-                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800">
-                          See Demo
+                      <div className="flex flex-row items-center justify-between mt-3  bg-slate-300 ">
+                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer ">
+                          <a href="https://ms-chat-app-mohit.netlify.app/" target="_blank"><FaEye size={18} /></a>
                         </button>
-                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800">
-                          See Code
+                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer">
+                        <a href="https://github.com/mohitm15/ms-chat-app" target="_blank"><HiCode size={18} /></a>
                         </button>
                       </div>
                     </div>
@@ -84,13 +83,10 @@ const Projects = () => {
                     />
                     <div className="flex flex-col justify-between p-3 leading-normal ">
                       <h5 className="mb-2 text-lg sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        ms-chatApp
+                        redux-boilerplate
                       </h5>
                       <p className="mb-3 font-normal text-xsm sm:text-base text-gray-700 dark:text-gray-400">
-                        Here are the biggest enterprise technology acquisitions
-                        of 2021 so far, in reverse chronological order.in
-                        reverse chronological order.in reverse chronological
-                        order.
+                      redux-boilerplate is a web application that can be treated as a starter template to learn redux-store and how to manage various states in any hierarchal order.
                       </p>
                       <hr className="m-auto text-black bg-black" />
                       <h3 className="text-sm sm:text-base text-black font-semibold">Technologies</h3>
@@ -99,21 +95,20 @@ const Projects = () => {
                           <SiReact />
                         </span>
                         <span>
-                          <SiMongodb />
+                          <SiBootstrap />
                         </span>
                         <span>
-                          <FaNodeJs />
+                          <SiRedux />
                         </span>
-                        <span>
-                          <SiPostman />
-                        </span>
+                        
+                        
                       </div>
-                      <div className="flex flex-row justify-between mt-3  bg-slate-300">
-                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800">
-                          See Demo
+                      <div className="flex flex-row items-center justify-between mt-3  bg-slate-300 ">
+                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer ">
+                          <a href="https://ms-chat-app-mohit.netlify.app/" target="_blank"><FaEye size={18} /></a>
                         </button>
-                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800">
-                          See Code
+                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer">
+                          <a href="https://github.com/mohitm15/redux-boilerplate/tree/master/redux-boilerplate" target="_blank"><HiCode size={18} /></a>
                         </button>
                       </div>
                     </div>
@@ -121,7 +116,7 @@ const Projects = () => {
                 </div>
               </div>
 
-              <div className="p-2 border-2 flex flex-col lg:flex-row items-center space-y-3 lg:space-y-0 lg:space-x-16 justify-center">
+              <div className="p-2 sm:p-10 border-2 flex flex-col lg:flex-row items-center space-y-3 lg:space-y-0 lg:space-x-16 justify-center">
                 {/* card1 */}
                 <div className="card w-full h-full bg-red-400 ">
                   <div
@@ -137,13 +132,10 @@ const Projects = () => {
                     />
                     <div className="flex flex-col justify-between p-3 leading-normal ">
                       <h5 className="mb-2 text-lg sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        ms-chatApp
+                        my-notebook
                       </h5>
                       <p className="mb-3 font-normal text-xsm sm:text-base text-gray-700 dark:text-gray-400">
-                        Here are the biggest enterprise technology acquisitions
-                        of 2021 so far, in reverse chronological order.in
-                        reverse chronological order.in reverse chronological
-                        order.
+                      my-notebook is a web application that is used to keep your notes securly. Each user can create, edit and delete its own notes. It also authenticates the user before performing any CRUD operation.
                       </p>
                       <hr className="m-auto text-black bg-black" />
                       <h3 className="text-sm sm:text-base text-black font-semibold">Technologies</h3>
@@ -160,13 +152,19 @@ const Projects = () => {
                         <span>
                           <SiPostman />
                         </span>
+                        <span>
+                          <SiWebauthn />
+                        </span>
+                        <span>
+                          <SiBootstrap />
+                        </span>
                       </div>
-                      <div className="flex flex-row justify-between mt-3  bg-slate-300">
-                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800">
-                          See Demo
+                      <div className="flex flex-row items-center justify-between mt-3  bg-slate-300 ">
+                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer ">
+                          <a href="https://my-notebook-mohit.netlify.app/" target="_blank"><FaEye size={18} /></a>
                         </button>
-                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800">
-                          See Code
+                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer">
+                          <a href="https://github.com/mohitm15/my-notebook" target="_blank"><HiCode size={18} /></a>
                         </button>
                       </div>
                     </div>
@@ -187,13 +185,10 @@ const Projects = () => {
                     />
                     <div className="flex flex-col justify-between p-3 leading-normal ">
                       <h5 className="mb-2 text-lg sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        ms-chatApp
+                        authlogin-boilerplate
                       </h5>
                       <p className="mb-3 font-normal text-xsm sm:text-base text-gray-700 dark:text-gray-400">
-                        Here are the biggest enterprise technology acquisitions
-                        of 2021 so far, in reverse chronological order.in
-                        reverse chronological order.in reverse chronological
-                        order.
+                      It's a web application that can be treated as a starter template to learn the basics of login system. It includes self-defined APIs for login, signUp and forgot/change Password functionality. 
                       </p>
                       <hr className="m-auto text-black bg-black" />
                       <h3 className="text-sm sm:text-base text-black font-semibold">Technologies</h3>
@@ -210,20 +205,23 @@ const Projects = () => {
                         <span>
                           <SiPostman />
                         </span>
+                        <span>
+                          <SiTailwindcss />
+                        </span>
                       </div>
-                      <div className="flex flex-row justify-between mt-3  bg-slate-300">
-                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800">
-                          See Demo
+                      <div className="flex flex-row items-center justify-between mt-3  bg-slate-300 ">
+                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer ">
+                          <a href="https://authlogin-boilerplate-frontend-6dww0kmcf-mohitm15.vercel.app/" target="_blank"><FaEye size={18} /></a>
                         </button>
-                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800">
-                          See Code
+                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer">
+                          <a href="https://github.com/mohitm15/authlogin-boilerplate" target="_blank"><HiCode size={18} /></a>
                         </button>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="p-2 border-2 flex flex-col lg:flex-row items-center space-y-3 lg:space-y-0 lg:space-x-16 justify-center">
+              <div className="p-2 sm:p-10 border-2 flex flex-col lg:flex-row items-center space-y-3 lg:space-y-0 lg:space-x-16 justify-center">
                 {/* card1 */}
                 <div className="card w-full h-full bg-red-400 ">
                   <div
@@ -239,13 +237,10 @@ const Projects = () => {
                     />
                     <div className="flex flex-col justify-between p-3 leading-normal ">
                       <h5 className="mb-2 text-lg sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        ms-chatApp
+                        ChessMania
                       </h5>
                       <p className="mb-3 font-normal text-xsm sm:text-base text-gray-700 dark:text-gray-400">
-                        Here are the biggest enterprise technology acquisitions
-                        of 2021 so far, in reverse chronological order.in
-                        reverse chronological order.in reverse chronological
-                        order.
+                      ChessMania is a website where you can find evrything about chess. You can see basic game rules, chess players & their rankings, read articles and see any user profile of LiChess.
                       </p>
                       <hr className="m-auto text-black bg-black" />
                       <h3 className="text-sm sm:text-base text-black font-semibold">Technologies</h3>
@@ -260,20 +255,30 @@ const Projects = () => {
                           <FaNodeJs />
                         </span>
                         <span>
+                          <SiBootstrap />
+                        </span>
+                        <span>
+                          <SiLichess />
+                        </span>
+                        <span>
                           <SiPostman />
                         </span>
+                        <span>
+                          <AiOutlineApi />
+                        </span>
                       </div>
-                      <div className="flex flex-row justify-between mt-3  bg-slate-300">
-                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800">
-                          See Demo
+                      <div className="flex flex-row items-center justify-between mt-3  bg-slate-300 ">
+                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer ">
+                          <a href="http://redify.vercel.app/" target="_blank"><FaEye size={18} /></a>
                         </button>
-                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800">
-                          See Code
+                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer">
+                          <a href="https://github.com/mohitm15/Redify" target="_blank"><HiCode size={18} /></a>
                         </button>
                       </div>
                     </div>
                   </div>
                 </div>
+                
                 {/* card2 */}
                 <div className="card w-full h-full bg-red-400 ">
                   <div
@@ -289,36 +294,33 @@ const Projects = () => {
                     />
                     <div className="flex flex-col justify-between p-3 leading-normal ">
                       <h5 className="mb-2 text-lg sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        ms-chatApp
+                        Redify
                       </h5>
                       <p className="mb-3 font-normal text-xsm sm:text-base text-gray-700 dark:text-gray-400">
-                        Here are the biggest enterprise technology acquisitions
-                        of 2021 so far, in reverse chronological order.in
-                        reverse chronological order.in reverse chronological
-                        order.
+                      Redify is the red version of Spotify. It is basically a clone of Spotify providing different songs. You can change, stop and play songs of your  playlist easily.
                       </p>
                       <hr className="m-auto text-black bg-black" />
                       <h3 className="text-sm sm:text-base text-black font-semibold">Technologies</h3>
                       <div className="text-black flex flex-row space-x-3 py-2">
                         <span>
-                          <SiReact />
+                          <FaHtml5 />
                         </span>
                         <span>
-                          <SiMongodb />
+                          <FaCss3 />
                         </span>
                         <span>
-                          <FaNodeJs />
+                          <SiJavascript />
                         </span>
                         <span>
-                          <SiPostman />
+                          <FaSpotify />
                         </span>
                       </div>
-                      <div className="flex flex-row justify-between mt-3  bg-slate-300">
-                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800">
-                          See Demo
+                      <div className="flex flex-row items-center justify-between mt-3  bg-slate-300 ">
+                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer ">
+                          <a href="http://chess-mania.vercel.app/" target="_blank"><FaEye size={18} /></a>
                         </button>
-                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800">
-                          See Code
+                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer">
+                          <a href="https://github.com/mohitm15/Redify" target="_blank"><HiCode size={18} /></a>
                         </button>
                       </div>
                     </div>
