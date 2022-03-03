@@ -13,7 +13,7 @@ const Hero = (props) => {
               {/* <h1 class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600">
                 Hello, world!
               </h1> */}
-              <div className="w-4/5 lg:w-3/5 p-3">
+              <div className="w-full text-justify md:w-4/5 xl:w-3/5 p-3">
                 <p className="text-sm sm:text-lg text-gray-100/80 font-light">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
