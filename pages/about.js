@@ -31,8 +31,10 @@ const About = () => {
               Technology Jodhpur (2017-21) in CSE. Currently, I'm workings as a
               Software Development Engineer in a Software Company.
             </p>
+            
           </div>
           <div className="w-1/5 bg-gray-100 h-[1px] mx-auto mb-5"></div> 
+          
         </div>
       </div>
     </>

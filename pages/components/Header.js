@@ -8,9 +8,11 @@ import {
   AiFillGithub,
   AiOutlineMenu,
   AiFillBell,
-  AiOutlinePlus,
 } from "react-icons/ai";
+import { ImCross } from "react-icons/im";
+import Image from "next/image";
 import imageurl from '../../public/Ash.jpg';
+
 
 const user = {
   name: "Mohit Maroliya",
@@ -90,8 +92,10 @@ const Header = () => {
                       <div>
                         <Menu.Button className="max-w-xs bg-gray-800 rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                           <span className="sr-only">Open user menu</span>
-                          <img
-                            className="h-8 w-8 rounded-full"
+                          <Image
+                            className="h-8 w-8 rounded-full bg-red-300"
+                            height={'30rem'}
+                            width={'35  rem'}
                             src={imageurl}
                             alt=""
                           />
@@ -106,7 +110,7 @@ const Header = () => {
                   <Disclosure.Button className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                     <span className="sr-only">Open main menu</span>
                     {open ? (
-                      <AiOutlinePlus
+                      <ImCross
                         className="block h-6 w-6"
                         aria-hidden="true"
                       />
@@ -146,8 +150,10 @@ const Header = () => {
               <div className="pt-4 pb-3 border-t border-gray-700 bg-[#01142c]">
                 <div className="flex items-center px-5 py-2">
                   <div className="flex-shrink-0">
-                    <img
-                      className="h-10 w-10 rounded-full"
+                    <Image
+                            className="h-8 w-8 rounded-full border-[1px] border-gray-100"
+                            height={'30rem'}
+                            width={'35rem'}
                       src={imageurl}
                       alt=""
                     />

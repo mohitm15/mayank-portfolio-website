@@ -21,38 +21,38 @@ const Contact = () => {
               </h2>
             </div>
             <div className="flex flex-col xl:flex-row space-y-5 xl:space-y-0 w-full md:p-20 md:w-6/12 xl:w-full m-auto xl:mx-5 items-center justify-center border-2 border-red-300">
-              <div className="flex flex-row w-full border-2">
-                <div className="p-2 md:p-3 lg:p-4 xl:p-5 2xl:p-6 bg-slate-900 rounded-lg m-auto border-2">
-                  <a href="https://mail.google.com/mail/u/1/#inbox?compose=new" target="_blank" className="hover:text-teal-600 ">
+              <div className="flex flex-row w-full  ">
+                <div className="p-2 md:p-3 lg:p-4 xl:p-5 2xl:p-6 hover:bg-gradient-to-r bg-slate-900 from-fuchsia-900  rounded-lg m-auto border-2">
+                  <a href="https://mail.google.com/mail/u/1/#inbox?compose=new" target="_blank" className="hover:text-yellow-500 ">
                     <SiGmail className="h-14 w-14 md:h-24 md:w-24 lg:h-28 lg:w-28 xl:h-32 xl:w-32 " />
                   </a>
                 </div>
-                <div className="p-2 md:p-3 lg:p-4 xl:p-5 2xl:p-6 bg-slate-900 rounded-lg m-auto border-2">
-                  <a href="https://www.youtube.com/channel/UCLDS5LaNHR6NEKYgQEPe9FA" target="_blank">
+                <div className="p-2 md:p-3 lg:p-4 xl:p-5 2xl:p-6  hover:bg-gradient-to-r from-fuchsia-900 bg-slate-900 rounded-lg m-auto border-2">
+                  <a href="https://www.youtube.com/channel/UCLDS5LaNHR6NEKYgQEPe9FA" target="_blank" className="hover:text-yellow-500 " >
                     <AiFillYoutube className="h-14 w-14 md:h-24 md:w-24 lg:h-28 lg:w-28 xl:h-32 xl:w-32 " />
                   </a>
                 </div>
               </div>
-              <div className="flex flex-row w-full border-2">
-                <div className="p-2 md:p-3 lg:p-4 xl:p-5 2xl:p-6 bg-slate-900 rounded-lg m-auto border-2">
-                  <a href="https://github.com/mohitm15" target="_blank">
+              <div className="flex flex-row w-full">
+                <div className="p-2 md:p-3 lg:p-4 xl:p-5 2xl:p-6 hover:bg-gradient-to-r from-fuchsia-900 bg-slate-900 rounded-lg m-auto border-2">
+                  <a href="https://github.com/mohitm15" target="_blank" className="hover:text-yellow-500 " >
                     <AiFillGithub className="h-14 w-14 md:h-24 md:w-24 lg:h-28 lg:w-28 xl:h-32 xl:w-32 " />
                   </a>
                 </div>
-                <div className="p-2 md:p-3 lg:p-4 xl:p-5 2xl:p-6 bg-slate-900 rounded-lg m-auto border-2">
-                  <a href="https://www.linkedin.com/in/mohit-maroliya-38b230172/" target="_blank">
+                <div className="p-2 md:p-3 lg:p-4 xl:p-5 2xl:p-6 hover:bg-gradient-to-r from-fuchsia-900 bg-slate-900 rounded-lg m-auto border-2">
+                  <a href="https://www.linkedin.com/in/mohit-maroliya-38b230172/" target="_blank" className="hover:text-yellow-500 " >
                     <AiFillLinkedin className="h-14 w-14 md:h-24 md:w-24 lg:h-28 lg:w-28 xl:h-32 xl:w-32 " />
                   </a>
                 </div>
               </div>
-              <div className="flex flex-row w-full border-2">
-                <div className="p-2 md:p-3 lg:p-4 xl:p-5 2xl:p-6 bg-slate-900 rounded-lg m-auto border-2">
-                  <a href="https://dev.to/mohitm15" target="_blank">
+              <div className="flex flex-row w-full ">
+                <div className="p-2 md:p-3 lg:p-4 xl:p-5 2xl:p-6 hover:bg-gradient-to-r from-fuchsia-900 bg-slate-900 rounded-lg m-auto border-2">
+                  <a href="https://dev.to/mohitm15" target="_blank" className="hover:text-yellow-500 " >
                     <SiDevdotto className="h-14 w-14 md:h-24 md:w-24 lg:h-28 lg:w-28 xl:h-32 xl:w-32 " />
                   </a>
                 </div>
-                <div className="p-2 md:p-3 lg:p-4 xl:p-5 2xl:p-6 bg-slate-900 rounded-lg m-auto border-2">
-                  <a href="https://lichess.org/@/mohit_maroliya" target="_blank">
+                <div className="p-2 md:p-3 lg:p-4 xl:p-5 2xl:p-6 hover:bg-gradient-to-r from-fuchsia-900 bg-slate-900 rounded-lg m-auto border-2">
+                  <a href="https://lichess.org/@/mohit_maroliya" target="_blank" className="hover:text-yellow-500 " >
                     <SiLichess className="h-14 w-14 md:h-24 md:w-24 lg:h-28 lg:w-28 xl:h-32 xl:w-32 " />
                   </a>
                 </div>

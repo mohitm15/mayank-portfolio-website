@@ -62,7 +62,7 @@ const Blogs = () => {
               <div className="flex flex-col space-y-2 sm:space-y-7 lg:space-y-10 justify-center items-center">
                 {data.map((element) => {
                   return (
-<div className="border-2 border-white py-4 lg:py-6 xl:py-10 px-4 lg:px-6 xl:px-10 w-full lg:w-4/5 xl:w-9/12">
+<div className="border-2 border-white py-4 lg:py-6 xl:py-10 px-4 lg:px-6 xl:px-10 w-full lg:w-4/5 xl:w-9/12   bg-gradient-to-t from-slate-900 ">
                   <div className="flex flex-row space-x-4 items-center">
                     <Image
                       src={imgurl}
