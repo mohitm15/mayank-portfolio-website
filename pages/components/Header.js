@@ -70,12 +70,12 @@ const Header = () => {
                 <div className="hidden md:block">
                   <div className="ml-4 flex items-center md:ml-6 space-x-3">
                     <span className="p-1 rounded-lg ease-in duration-200 hover:bg-[#212d45] hover:scale-125 hover:cursor-pointer">
-                      <a href="https://google.com">
+                      <a href="https://github.com/mohitm15">
                         <AiFillGithub className="h-7 w-7" aria-hidden="true" />
                       </a>
                     </span>
                     <span className="p-1 rounded-lg ease-in duration-200 hover:bg-[#212d45] hover:scale-125 hover:cursor-pointer">
-                      <a href="https://google.com">
+                      <a href="https://www.linkedin.com/in/mohit-maroliya-38b230172/">
                         <AiFillLinkedin
                           className="h-7 w-7"
                           aria-hidden="true"
@@ -83,7 +83,7 @@ const Header = () => {
                       </a>
                     </span>
                     <span className="p-1 rounded-lg ease-in duration-200 hover:bg-[#212d45] hover:scale-125 hover:cursor-pointer">
-                      <a href="https://google.com">
+                      <a href="https://google.comhttps://www.youtube.com/channel/UCLDS5LaNHR6NEKYgQEPe9FA">
                         <AiFillYoutube className="h-7 w-7" aria-hidden="true" />
                       </a>
                     </span>
