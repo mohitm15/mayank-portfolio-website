@@ -12,6 +12,10 @@ import imgurl5s from "../public/5small.png";
 import imgurl5l from "../public/5large.png";
 import imgurl6s from "../public/6small.jpg";
 import imgurl6l from "../public/6large.png";
+import imgurl7s from "../public/7small.png";
+import imgurl7l from "../public/7large.png";
+import imgurl8s from "../public/8small.png";
+import imgurl8l from "../public/8large.png";
 import Image from "next/image";
 import {
   SiBootstrap,
@@ -19,6 +23,7 @@ import {
   SiJavascript,
   SiLichess,
   SiMongodb,
+  SiNextdotjs,
   SiPostman,
   SiReact,
   SiRedux,
@@ -45,7 +50,7 @@ const Projects = () => {
                 {/* card1  mschatapp*/}
                 <div className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover:from-[#fc91a1] hover:to-[#a7cffd] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-oute ">
                   <div
-                    href="#"
+                    
                     className="transition p-2 flex flex-col items-center bg-gradient-to-r from-[#ffa0ae,5%] to-[#b2eff7]  rounded-lg border shadow-md sm:flex-row md:max-w-6xl md:max-h-96 hover:cursor-pointer hover:from-[#ffa0ae,20%] hover:to-[#b2eff7] hover:transition hover:duration-500 ease-in-out  opacity-90 hover:opacity-100"
                   >
                     <div className="block sm:hidden">
@@ -129,7 +134,7 @@ const Projects = () => {
                 {/* card2 chessmania*/}
                 <div className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover:from-[#fc91a1] hover:to-[#a7cffd] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-oute ">
                   <div
-                    href="#"
+                    
                     className="transition p-2 flex flex-col items-center bg-gradient-to-r from-[#ffa0ae,5%] to-[#b2eff7]  rounded-lg border shadow-md sm:flex-row md:max-w-6xl md:max-h-96 hover:cursor-pointer hover:from-[#ffa0ae,20%] hover:to-[#b2eff7] hover:transition hover:duration-500 ease-in-out  opacity-90 hover:opacity-100"
                   >
                     <div className="block sm:hidden">
@@ -217,7 +222,7 @@ const Projects = () => {
                 {/* card1 notebook*/}
                 <div className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover:from-[#fc91a1] hover:to-[#a7cffd] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-oute ">
                   <div
-                    href="#"
+                    
                     className="transition p-2 flex flex-col items-center bg-gradient-to-r from-[#ffa0ae,5%] to-[#b2eff7]  rounded-lg border shadow-md sm:flex-row md:max-w-6xl md:max-h-96 hover:cursor-pointer hover:from-[#ffa0ae,20%] hover:to-[#b2eff7] hover:transition hover:duration-500 ease-in-out  opacity-90 hover:opacity-100"
                   >
                     <div className="block sm:hidden">
@@ -302,7 +307,7 @@ const Projects = () => {
                 {/* card2  authlogin*/}
                 <div className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover:from-[#fc91a1] hover:to-[#a7cffd] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-oute ">
                   <div
-                    href="#"
+                    
                     className="transition p-2 flex flex-col items-center bg-gradient-to-r from-[#ffa0ae,5%] to-[#b2eff7]  rounded-lg border shadow-md sm:flex-row md:max-w-6xl md:max-h-96 hover:cursor-pointer hover:from-[#ffa0ae,20%] hover:to-[#b2eff7] hover:transition hover:duration-500 ease-in-out  opacity-90 hover:opacity-100"
                   >
                     <div className="block sm:hidden">
@@ -386,7 +391,7 @@ const Projects = () => {
                 {/* card1 redux*/}
                 <div className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover:from-[#fc91a1] hover:to-[#a7cffd] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-oute ">
                   <div
-                    href="#"
+                    
                     className="transition p-2 flex flex-col items-center bg-gradient-to-r from-[#ffa0ae,5%] to-[#b2eff7]  rounded-lg border shadow-md sm:flex-row md:max-w-6xl md:max-h-96 hover:cursor-pointer hover:from-[#ffa0ae,20%] hover:to-[#b2eff7] hover:transition hover:duration-500 ease-in-out  opacity-90 hover:opacity-100"
                   >
                     <div className="block sm:hidden">
@@ -461,7 +466,7 @@ const Projects = () => {
                 {/* card2 redify*/}
                 <div className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover:from-[#fc91a1] hover:to-[#a7cffd] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-oute ">
                   <div
-                    href="#"
+                    
                     className="transition p-2 flex flex-col items-center bg-gradient-to-r from-[#ffa0ae,5%] to-[#b2eff7]  rounded-lg border shadow-md sm:flex-row md:max-w-6xl md:max-h-96 hover:cursor-pointer hover:from-[#ffa0ae,20%] hover:to-[#b2eff7] hover:transition hover:duration-500 ease-in-out  opacity-90 hover:opacity-100"
                   >
                     <div className="block sm:hidden">
@@ -528,6 +533,156 @@ const Projects = () => {
                           title="See Code">
                           <a
                             href="https://github.com/mohitm15/Redify"
+                            target="_blank"
+                          >
+                            <HiCode size={18} />
+                          </a>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="p-2 sm:p-10 flex flex-col lg:flex-row items-center space-y-3 lg:space-y-0 lg:space-x-16 justify-center">
+                {/* card1 timetravel*/}
+                <div className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover:from-[#fc91a1] hover:to-[#a7cffd] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-oute ">
+                  <div
+                    
+                    className="transition p-2 flex flex-col items-center bg-gradient-to-r from-[#ffa0ae,5%] to-[#b2eff7]  rounded-lg border shadow-md sm:flex-row md:max-w-6xl md:max-h-96 hover:cursor-pointer hover:from-[#ffa0ae,20%] hover:to-[#b2eff7] hover:transition hover:duration-500 ease-in-out  opacity-90 hover:opacity-100"
+                  >
+                    <div className="block sm:hidden">
+                    <Image
+                      height={350}
+                      width={700}
+                      className="object-cover rounded-t-lg "
+                      src={imgurl7l}
+                      alt=""
+                    />
+                    </div>
+                    <div className="hidden sm:block">
+                    <Image
+                      width="500%"
+                      height="1000%"
+                      className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                      src={imgurl7s}
+                      alt=""
+                    />
+                    </div>
+                    <div className="flex flex-col justify-between p-3 leading-normal ">
+                      <h5 className="mb-2 text-lg sm:text-2xl font-bold tracking-tight text-gray-900 ">
+                        Time Travel
+                      </h5>
+                      <p className="mb-3 font-normal text-xsm sm:text-base text-justify text-gray-700 ">
+                      Time-travel is an application from which anyone can check the time of major Asian Cities.
+                      It uses world-time API and country-flag API to display the time and flag for each country respectively.
+                      </p>
+                      <hr className="m-auto text-black bg-black" />
+                      <h3 className="text-sm sm:text-base text-black font-semibold">
+                        Technologies
+                      </h3>
+                      <div className="text-black flex flex-row space-x-3 py-2">
+                        <span>
+                          <SiReact className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        </span>
+                        <span>
+                          <SiTailwindcss className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        </span>
+                        <span>
+                          <AiOutlineApi className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        </span>
+                      </div>
+                      <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
+                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="bottom"
+                          title="See Live">
+                          <a
+                            href="https://timetravel-mohit.netlify.app/"
+                            target="_blank"
+                          >
+                            <FaEye size={18} />
+                          </a>
+                        </button>
+                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="bottom"
+                          title="See Code">
+                          <a
+                            href="https://github.com/mohitm15/TimeTravel"
+                            target="_blank"
+                          >
+                            <HiCode size={18} />
+                          </a>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* card2 portfolio*/}
+                <div className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover:from-[#fc91a1] hover:to-[#a7cffd] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-oute ">
+                  <div
+                    
+                    className="transition p-2 flex flex-col items-center bg-gradient-to-r from-[#ffa0ae,5%] to-[#b2eff7]  rounded-lg border shadow-md sm:flex-row md:max-w-6xl md:max-h-96 hover:cursor-pointer hover:from-[#ffa0ae,20%] hover:to-[#b2eff7] hover:transition hover:duration-500 ease-in-out  opacity-90 hover:opacity-100"
+                  >
+                    <div className="block sm:hidden">
+                    <Image
+                      height={350}
+                      width={700}
+                      className="object-cover rounded-t-lg "
+                      src={imgurl8l}
+                      alt=""
+                    />
+                    </div>
+                    <div className="hidden sm:block">
+                    <Image
+                      width="500%"
+                      height="1000%"
+                      className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                      src={imgurl8s}
+                      alt=""
+                    />
+                    </div>
+                    <div className="flex flex-col justify-between p-3 leading-normal ">
+                      <h5 className="mb-2 text-lg sm:text-2xl font-bold tracking-tight text-gray-900 ">
+                        My PortFolio Website
+                      </h5>
+                      <p className="mb-3 font-normal text-xsm sm:text-base text-justify text-gray-700 ">
+                        My-PortFolio-website is the website which showcases me. It includes some information about my proffesional world and also my major projects, blogs and contact details.
+                      </p>
+                      <hr className="m-auto text-black bg-black" />
+                      <h3 className="text-sm sm:text-base text-black font-semibold">
+                        Technologies
+                      </h3>
+                      <div className="text-black flex flex-row space-x-3 py-2">
+                        <span>
+                          <SiNextdotjs className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        </span>
+                        <span>
+                          <SiTailwindcss className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        </span>
+                        <span>
+                          <SiFramer className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        </span>
+                        
+                      </div>
+                      <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
+                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="bottom"
+                          title="See Live">
+                          <a
+                            href="https://my-portfolio-website-steel.vercel.app/"
+                            target="_blank"
+                          >
+                            <FaEye size={18} />
+                          </a>
+                        </button>
+                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="bottom"
+                          title="See Code">
+                          <a
+                            href="https://github.com/mohitm15/my-portfolio-website"
                             target="_blank"
                           >
                             <HiCode size={18} />

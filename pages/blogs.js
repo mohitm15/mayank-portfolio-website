@@ -5,6 +5,7 @@ import imgurl from "../public/dog.jpg";
 
 const data = [
   {
+    sno:1,
     author: "Mohit Maroliya",
     history: "Nov 21, 2022",
     likes: 20,
@@ -14,6 +15,7 @@ const data = [
     link: "https://dev.to/mohitm15/starting-with-react-redux-1dno",
   },
   {
+    sno:2,
     author: "Mohit Maroliya",
     history: "Dec 07, 2021",
     likes: 41,
@@ -26,6 +28,7 @@ const data = [
     link: "https://dev.to/mohitm15/creating-super-buttons-for-like-share-and-subscribe-gef",
   },
   {
+    sno:3,
     author: "Mohit Maroliya",
     history: "Dec 31, 2021",
     likes: 30,
@@ -36,6 +39,7 @@ const data = [
     link: "https://dev.to/mohitm15/creating-super-radio-buttons-ip8",
   },
   {
+    sno:4,
     author: "Mohit Maroliya",
     history: "Jan 12, 2022",
     likes: 13,
@@ -62,7 +66,7 @@ const Blogs = () => {
               <div className="flex flex-col space-y-2 sm:space-y-7 lg:space-y-10 justify-center items-center">
                 {data.map((element) => {
                   return (
-<div className="border-2 border-white py-4 lg:py-6 xl:py-10 px-4 lg:px-6 xl:px-10 w-full lg:w-4/5 xl:w-9/12   bg-gradient-to-t from-slate-900 ">
+<div key={element.sno} className="border-2 border-white py-4 lg:py-6 xl:py-10 px-4 lg:px-6 xl:px-10 w-full lg:w-4/5 xl:w-9/12   bg-gradient-to-t from-slate-900 ">
                   <div className="flex flex-row space-x-4 items-center">
                     <Image
                       src={imgurl}
@@ -82,9 +86,9 @@ const Blogs = () => {
                       {element.title}
                     </h2>
                     <h5 className="text-white opacity-60 text-sm xl:text-lg ">
-                      {element.tags.map((item) => {
+                      {element.tags.map((key,item) => {
                         return (
-                          <span className="text-red-300 mx-1">#{item} </span>
+                          <span key={key} className="text-red-300 mx-1">#{item} </span>
                         );
                       })}
                     </h5>

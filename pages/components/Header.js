@@ -51,7 +51,7 @@ const Header = () => {
                   <div className="hidden md:block">
                     <div className="ml-10 flex items-baseline space-x-8">
                       {navigation.map((item) => (
-                        <Link href={item.href}>
+                        <Link key={item.index} href={item.href}>
                           <a
                             key={item.name}
                             onClick={() => {
