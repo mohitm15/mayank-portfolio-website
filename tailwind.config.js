@@ -15,7 +15,7 @@ module.exports = {
       dropShadow: {
         '3xl': '0px 0px 20px #b2eff7',
         '2xl': '0px 0px 1px #ffffff',
-        'xl' : '0px 0px 5px rgb(20 184 166 / 0.75)'
+        'xl' : '0px 0px 50px linear-gradient( to right, #ffffff , #fffacc)'
       } 
     },
   },

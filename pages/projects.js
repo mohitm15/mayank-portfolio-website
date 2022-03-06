@@ -1,7 +1,17 @@
 import React from "react";
 import Header from "./components/Header";
-import imgurl2 from "../public/Ash.jpg";
-import imgurl3 from "../public/desk1.jpg";
+import imgurl1s from "../public/mssmall.png";
+import imgurl1l from "../public/mslarge.png";
+import imgurl2s from "../public/2small.jpeg";
+import imgurl2l from "../public/2large.png";
+import imgurl3s from "../public/3large.png";
+import imgurl3l from "../public/3large.jpg";
+import imgurl4s from "../public/4small.png";
+import imgurl4l from "../public/4large.png";
+import imgurl5s from "../public/5small.png";
+import imgurl5l from "../public/5large.png";
+import imgurl6s from "../public/6small.jpg";
+import imgurl6l from "../public/6large.png";
 import Image from "next/image";
 import {
   SiBootstrap,
@@ -43,7 +53,7 @@ const Projects = () => {
                       height={350}
                       width={700}
                       className="object-cover rounded-t-lg "
-                      src={imgurl2}
+                      src={imgurl1l}
                       alt=""
                     />
                     </div>
@@ -52,7 +62,7 @@ const Projects = () => {
                       width="500%"
                       height="1000%"
                       className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                      src={imgurl3}
+                      src={imgurl1s}
                       alt=""
                     />
                     </div>
@@ -127,7 +137,7 @@ const Projects = () => {
                       height={350}
                       width={700}
                       className="object-cover rounded-t-lg "
-                      src={imgurl2}
+                      src={imgurl2l}
                       alt=""
                     />
                     </div>
@@ -136,7 +146,7 @@ const Projects = () => {
                       width="500%"
                       height="1000%"
                       className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                      src={imgurl3}
+                      src={imgurl2s}
                       alt=""
                     />
                     </div>
@@ -215,7 +225,7 @@ const Projects = () => {
                       height={350}
                       width={700}
                       className="object-cover rounded-t-lg "
-                      src={imgurl2}
+                      src={imgurl3s}
                       alt=""
                     />
                     </div>
@@ -224,7 +234,7 @@ const Projects = () => {
                       width="500%"
                       height="1000%"
                       className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                      src={imgurl3}
+                      src={imgurl3l}
                       alt=""
                     />
                     </div>
@@ -300,7 +310,7 @@ const Projects = () => {
                       height={350}
                       width={700}
                       className="object-cover rounded-t-lg "
-                      src={imgurl2}
+                      src={imgurl4l}
                       alt=""
                     />
                     </div>
@@ -309,7 +319,7 @@ const Projects = () => {
                       width="500%"
                       height="1000%"
                       className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                      src={imgurl3}
+                      src={imgurl4s}
                       alt=""
                     />
                     </div>
@@ -384,7 +394,7 @@ const Projects = () => {
                       height={350}
                       width={700}
                       className="object-cover rounded-t-lg "
-                      src={imgurl2}
+                      src={imgurl5l}
                       alt=""
                     />
                     </div>
@@ -393,7 +403,7 @@ const Projects = () => {
                       width="500%"
                       height="1000%"
                       className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                      src={imgurl3}
+                      src={imgurl5s}
                       alt=""
                     />
                     </div>
@@ -427,7 +437,7 @@ const Projects = () => {
                           data-bs-placement="bottom"
                           title="See Live">
                           <a
-                            href="https://ms-chat-app-mohit.netlify.app/"
+                            href="https://redux-starter-boilerplate.herokuapp.com/"
                             target="_blank"
                           >
                             <FaEye size={18} />
@@ -459,7 +469,7 @@ const Projects = () => {
                       height={350}
                       width={700}
                       className="object-cover rounded-t-lg "
-                      src={imgurl2}
+                      src={imgurl6l}
                       alt=""
                     />
                     </div>
@@ -468,7 +478,7 @@ const Projects = () => {
                       width="500%"
                       height="1000%"
                       className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                      src={imgurl3}
+                      src={imgurl6s}
                       alt=""
                     />
                     </div>
