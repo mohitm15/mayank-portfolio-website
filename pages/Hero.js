@@ -13,18 +13,21 @@ const Hero = (props) => {
               {/* <h1 class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600">
                 Hello, world!
               </h1> */}
-              <div className="w-full text-justify md:w-4/5 xl:w-3/5 p-3">
-                <p className="text-sm sm:text-lg text-gray-100/80 font-light">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+              <div className="w-full text-justify sm:text-clip md:w-4/5 xl:w-3/5 p-3">
+                <p className="text-sm sm:text-xl text-gray-100/80 font-light sm:tracking-wider">
+                  Hello everyone, I am Mohit Maroliya. I am a Indian-based Software Developer who has a slight 
+                  inclination building websites with good UI. Most of the time you can find 
+                  me writting code, playing chess and doing cycling.
+                  
+                </p>
+                <p className="text-sm sm:text-xl text-gray-100/80 font-light sm:tracking-wider mt-3 lg:mt-5">
+                Visit this website to know about me more.
                 </p>
               </div>
               <div className="py-4 sm:py-8 px-3 space-y-3 space-x-0 sm:space-y-0 sm:space-x-10">
-                <button className="text-white text-lg sm:text-xl font-bold py-3 px-6 bg-gradient-to-r from-teal-500/75 to-purple-500/50 rounded-2xl hover:opacity-90 hover:border-2 border-white">Learn More</button>
+                <button className="text-white text-lg sm:text-xl font-bold py-3 px-6 bg-gradient-to-r from-teal-500/75 to-purple-500/50 rounded-2xl hover:border-[1px] border-white hover:drop-shadow-xl">Learn More</button>
 
-                <button className="text-white text-lg sm:text-xl font-bold py-3 px-6 bg-gradient-to-r from-teal-500/75 to-purple-500/50 rounded-2xl hover:opacity-90 hover:border-2 border-white">
+                <button className="text-white text-lg sm:text-xl font-bold py-3 px-6 bg-gradient-to-r from-teal-500/75 to-purple-500/50 rounded-2xl hover:border-[1px] border-white hover:drop-shadow-xl">
                   <a href="https://drive.google.com/u/0/uc?id=18w36fVGMM2F2Vif8tEfhjG9nHLenjVsC&export=download" download="Resume_Mohit_Maroliya.pdf" target="_blank">Download Resume </a></button>
               </div>
             </div>

@@ -30,13 +30,13 @@ const Projects = () => {
                 Welcome To My Projects
               </h2>
             </div>
-            <div className="p-5 border-2 border-red-400 flex flex-col lg:flex-col items-center justify-center ">
+            <div className="p-5 border-2 border-red-400/20 flex flex-col lg:flex-col items-center justify-center ">
               <div className="p-2 sm:p-10 flex flex-col lg:flex-row items-center space-y-3 lg:space-y-0 lg:space-x-16 justify-center">
                 {/* card1  mschatapp*/}
-                <div className="card w-full h-full  ">
+                <div className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover:from-[#fc91a1] hover:to-[#a7cffd] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-oute ">
                   <div
                     href="#"
-                    className="p-2 flex flex-col items-center bg-gradient-to-r from-gray-300 to-slate-400/80 rounded-lg border shadow-md sm:flex-row md:max-w-6xl md:max-h-96 hover:cursor-pointer"
+                    className="transition p-2 flex flex-col items-center bg-gradient-to-r from-[#ffa0ae,5%] to-[#b2eff7]  rounded-lg border shadow-md sm:flex-row md:max-w-6xl md:max-h-96 hover:cursor-pointer hover:from-[#ffa0ae,20%] hover:to-[#b2eff7] hover:transition hover:duration-500 ease-in-out  opacity-90 hover:opacity-100"
                   >
                     <div className="block sm:hidden">
                     <Image
@@ -84,7 +84,7 @@ const Projects = () => {
                           <SiPostman className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
                         </span>
                       </div>
-                      <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300 ">
+                      <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
                         <button
                           className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
                           data-bs-toggle="tooltip"
@@ -117,10 +117,10 @@ const Projects = () => {
                   </div>
                 </div>
                 {/* card2 chessmania*/}
-                <div className="card w-full h-full  ">
+                <div className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover:from-[#fc91a1] hover:to-[#a7cffd] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-oute ">
                   <div
                     href="#"
-                    className="p-2 flex flex-col items-center bg-gradient-to-r from-gray-300 to-slate-400/80 rounded-lg border shadow-md sm:flex-row md:max-w-6xl md:max-h-96 hover:cursor-pointer"
+                    className="transition p-2 flex flex-col items-center bg-gradient-to-r from-[#ffa0ae,5%] to-[#b2eff7]  rounded-lg border shadow-md sm:flex-row md:max-w-6xl md:max-h-96 hover:cursor-pointer hover:from-[#ffa0ae,20%] hover:to-[#b2eff7] hover:transition hover:duration-500 ease-in-out  opacity-90 hover:opacity-100"
                   >
                     <div className="block sm:hidden">
                     <Image
@@ -177,12 +177,12 @@ const Projects = () => {
                           <AiOutlineApi className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
                         </span>
                       </div>
-                      <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300 ">
+                      <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
                         <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
                           data-bs-toggle="tooltip"
                           data-bs-placement="bottom"
                           title="See Live">
-                          <a href="http://redify.vercel.app/" target="_blank">
+                          <a href="http://chess-mania.vercel.app/" target="_blank">
                             <FaEye size={18} />
                           </a>
                         </button>
@@ -205,10 +205,10 @@ const Projects = () => {
 
               <div className="p-2 sm:p-10 flex flex-col lg:flex-row items-center space-y-3 lg:space-y-0 lg:space-x-16 justify-center">
                 {/* card1 notebook*/}
-                <div className="card w-full h-full  ">
+                <div className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover:from-[#fc91a1] hover:to-[#a7cffd] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-oute ">
                   <div
                     href="#"
-                    className="p-2 flex flex-col items-center bg-gradient-to-r from-gray-300 to-slate-400/80 rounded-lg border shadow-md sm:flex-row md:max-w-6xl md:max-h-96 hover:cursor-pointer"
+                    className="transition p-2 flex flex-col items-center bg-gradient-to-r from-[#ffa0ae,5%] to-[#b2eff7]  rounded-lg border shadow-md sm:flex-row md:max-w-6xl md:max-h-96 hover:cursor-pointer hover:from-[#ffa0ae,20%] hover:to-[#b2eff7] hover:transition hover:duration-500 ease-in-out  opacity-90 hover:opacity-100"
                   >
                     <div className="block sm:hidden">
                     <Image
@@ -262,7 +262,7 @@ const Projects = () => {
                           <SiBootstrap className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
                         </span>
                       </div>
-                      <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300 ">
+                      <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg ">
                         <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
                           data-bs-toggle="tooltip"
                           data-bs-placement="bottom"
@@ -290,10 +290,10 @@ const Projects = () => {
                   </div>
                 </div>
                 {/* card2  authlogin*/}
-                <div className="card w-full h-full  ">
+                <div className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover:from-[#fc91a1] hover:to-[#a7cffd] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-oute ">
                   <div
                     href="#"
-                    className="p-2 flex flex-col items-center bg-gradient-to-r from-gray-300 to-slate-400/80 rounded-lg border shadow-md sm:flex-row md:max-w-6xl md:max-h-96 hover:cursor-pointer"
+                    className="transition p-2 flex flex-col items-center bg-gradient-to-r from-[#ffa0ae,5%] to-[#b2eff7]  rounded-lg border shadow-md sm:flex-row md:max-w-6xl md:max-h-96 hover:cursor-pointer hover:from-[#ffa0ae,20%] hover:to-[#b2eff7] hover:transition hover:duration-500 ease-in-out  opacity-90 hover:opacity-100"
                   >
                     <div className="block sm:hidden">
                     <Image
@@ -344,7 +344,7 @@ const Projects = () => {
                           <SiTailwindcss className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
                         </span>
                       </div>
-                      <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300 ">
+                      <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
                         <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
                           data-bs-toggle="tooltip"
                           data-bs-placement="bottom"
@@ -374,10 +374,10 @@ const Projects = () => {
               </div>
               <div className="p-2 sm:p-10 flex flex-col lg:flex-row items-center space-y-3 lg:space-y-0 lg:space-x-16 justify-center">
                 {/* card1 redux*/}
-                <div className="card w-full h-full  ">
+                <div className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover:from-[#fc91a1] hover:to-[#a7cffd] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-oute ">
                   <div
                     href="#"
-                    className="p-2 flex flex-col items-center bg-gradient-to-r from-gray-300 to-slate-400/80 rounded-lg border shadow-md sm:flex-row md:max-w-6xl md:max-h-96 hover:cursor-pointer"
+                    className="transition p-2 flex flex-col items-center bg-gradient-to-r from-[#ffa0ae,5%] to-[#b2eff7]  rounded-lg border shadow-md sm:flex-row md:max-w-6xl md:max-h-96 hover:cursor-pointer hover:from-[#ffa0ae,20%] hover:to-[#b2eff7] hover:transition hover:duration-500 ease-in-out  opacity-90 hover:opacity-100"
                   >
                     <div className="block sm:hidden">
                     <Image
@@ -421,7 +421,7 @@ const Projects = () => {
                           <SiRedux className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
                         </span>
                       </div>
-                      <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300 ">
+                      <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
                         <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
                           data-bs-toggle="tooltip"
                           data-bs-placement="bottom"
@@ -449,10 +449,10 @@ const Projects = () => {
                   </div>
                 </div>
                 {/* card2 redify*/}
-                <div className="card w-full h-full  ">
+                <div className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover:from-[#fc91a1] hover:to-[#a7cffd] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-oute ">
                   <div
                     href="#"
-                    className="p-2 flex flex-col items-center bg-gradient-to-r from-gray-300 to-slate-400/80 rounded-lg border shadow-md sm:flex-row md:max-w-6xl md:max-h-96 hover:cursor-pointer"
+                    className="transition p-2 flex flex-col items-center bg-gradient-to-r from-[#ffa0ae,5%] to-[#b2eff7]  rounded-lg border shadow-md sm:flex-row md:max-w-6xl md:max-h-96 hover:cursor-pointer hover:from-[#ffa0ae,20%] hover:to-[#b2eff7] hover:transition hover:duration-500 ease-in-out  opacity-90 hover:opacity-100"
                   >
                     <div className="block sm:hidden">
                     <Image
@@ -500,13 +500,13 @@ const Projects = () => {
                           <FaSpotify className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
                         </span>
                       </div>
-                      <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300 ">
+                      <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
                         <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
                           data-bs-toggle="tooltip"
                           data-bs-placement="bottom"
                           title="See Live">
                           <a
-                            href="http://chess-mania.vercel.app/"
+                            href="http://redify.vercel.app/"
                             target="_blank"
                           >
                             <FaEye size={18} />
