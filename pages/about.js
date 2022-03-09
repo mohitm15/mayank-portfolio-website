@@ -26,6 +26,7 @@ import {
   SiPhotopea,
   SiLinux,
   SiOverleaf,
+  SiVisualstudiocode,
 } from "react-icons/si";
 import { FaCss3, FaHtml5, FaNodeJs } from "react-icons/fa";
 
@@ -45,7 +46,7 @@ const About = () => {
               />
             </div>
             <div className="max-w-7xl mx-auto md:py-5 lg:py-20 px-4 sm:px-2 lg:px-2">
-              <h2 className="text-4xl md:text-7xl xl:text-8xl leading-snug md:leading-snug xl:leading-relaxed w-full text-transparent bg-clip-text font-extrabold bg-gradient-to-r from-white to-sky-500/10 p-2">
+              <h2 className="text-4xl md:text-6xl xl:text-8xl leading-snug md:leading-snug xl:leading-relaxed w-full text-transparent bg-clip-text font-extrabold bg-gradient-to-r from-white to-sky-500/10 p-2">
                 My Name is <br /> Mohit Maroliya
               </h2>
             </div>
@@ -60,13 +61,14 @@ const About = () => {
           </div>
           <div className="w-1/5 bg-gray-100 h-[1px] mx-auto mb-5 hover:drop-shadow-2xl"></div>
           <div className="max-w-7xl mx-auto md:py-5 lg:py-20 px-4 sm:px-2 lg:px-2">
-            <h2 className="text-4xl md:text-7xl xl:text-7xl leading-snug md:leading-snug xl:leading-relaxed w-full text-transparent text-center bg-clip-text font-extrabold bg-gradient-to-tl from-white to-sky-500/10 p-2">
+            <h2 className="text-4xl md:text-6xl xl:text-6xl leading-snug md:leading-snug xl:leading-relaxed w-full text-transparent text-center bg-clip-text font-extrabold bg-gradient-to-tl from-white to-sky-500/10 p-2">
               My Skills
             </h2>
           </div>
+          {/* web development */}
           <div className="text-center m-2">
             <div>
-              <h1 class="text-4xl md:text-5xl xl:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600 mb-4 lg:mb-6 xl:mb-8">
+              <h1 className="text-4xl md:text-5xl xl:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600 mb-4 lg:mb-6 xl:mb-8 z-10">
                 Web Development
               </h1>
             </div>
@@ -88,7 +90,7 @@ const About = () => {
               <div className=" mx-auto flex-row justify-center items-center">
                 <SiExpress className="h-16 w-16 md:h-20 md:w-20 lg:h-24 lg:w-24 xl:h-32 xl:w-32 hover:drop-shadow-3xl opacity-90 hover:opacity-100" />
                 <span className="text-center lg:text-lg sm:ml-1 md:ml-2 lg:ml-4 xl:ml-7 ">
-                  ReactJS
+                  ExpressJS
                 </span>
               </div>
 
@@ -102,7 +104,7 @@ const About = () => {
               <div className=" mx-auto flex-row justify-center items-center">
                 <SiTailwindcss className="h-16 w-16 md:h-20 md:w-20 lg:h-24 lg:w-24 xl:h-32 xl:w-32 hover:drop-shadow-3xl opacity-90 hover:opacity-100" />
                 <span className="text-center lg:text-lg sm:ml-1 md:ml-2 lg:ml-4 xl:ml-7 ">
-                  TailwindCSS
+                  Tailwind
                 </span>
               </div>
 
@@ -123,7 +125,7 @@ const About = () => {
               <div className=" mx-auto flex-row justify-center items-center">
                 <SiJavascript className="h-16 w-16 md:h-20 md:w-20 lg:h-24 lg:w-24 xl:h-32 xl:w-32 hover:drop-shadow-3xl opacity-90 hover:opacity-100" />
                 <span className="text-center lg:text-lg sm:ml-1 md:ml-2 lg:ml-4 xl:ml-7 ">
-                  javaScript
+                  JavaScript
                 </span>
               </div>
 
@@ -153,7 +155,7 @@ const About = () => {
           {/*programming */}
           <div className="text-center m-2">
             <div>
-              <h1 class="text-4xl md:text-5xl xl:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600 mb-4 lg:mb-6 xl:mb-8">
+              <h1 className="text-4xl md:text-5xl xl:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600 mb-4 lg:mb-6 xl:mb-8 z-10">
                 Programming
               </h1>
             </div>
@@ -176,10 +178,11 @@ const About = () => {
               </div>
             </div>
           </div>
+
           {/* databases */}
           <div className="text-center m-2">
             <div>
-              <h1 class="text-4xl md:text-5xl xl:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600 mb-4 lg:mb-6 xl:mb-8">
+              <h1 className="text-4xl md:text-5xl xl:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600 mb-4 lg:mb-6 xl:mb-8 z-10">
                 Databases
               </h1>
             </div>
@@ -202,10 +205,11 @@ const About = () => {
               </div>
             </div>
           </div>
+
           {/* utilities */}
           <div className="text-center m-2">
             <div>
-              <h1 class="text-4xl md:text-5xl xl:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600 mb-4 lg:mb-6 xl:mb-8">
+              <h1 className="text-4xl md:text-5xl xl:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600 mb-4 lg:mb-6 xl:mb-8 z-10">
                 Utilities
               </h1>
             </div>
@@ -286,8 +290,16 @@ const About = () => {
                   Overleaf
                 </span>
               </div>
+
+              <div className=" mx-auto flex-row justify-center items-center">
+                <SiVisualstudiocode className="h-16 w-16 md:h-20 md:w-20 lg:h-24 lg:w-24 xl:h-32 xl:w-32 hover:drop-shadow-3xl opacity-90 hover:opacity-100" />
+                <span className="text-center lg:text-lg sm:ml-1 md:ml-2 lg:ml-4 xl:ml-7 ">
+                  VSCode
+                </span>
+              </div>
             </div>
           </div>
+          
         </div>
 
         <div className="w-1/5 bg-gray-100 h-[2px] mx-auto my-10 hover:drop-shadow-2xl"></div>
