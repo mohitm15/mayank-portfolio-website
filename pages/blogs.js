@@ -86,9 +86,9 @@ const Blogs = () => {
                       {element.title}
                     </h2>
                     <h5 className="text-white opacity-60 text-sm xl:text-lg ">
-                      {element.tags.map((key,item) => {
+                      {element.tags.map((item) => {
                         return (
-                          <span key={key} className="text-red-300 mx-1">#{item} </span>
+                          <span key={item} className="text-red-300 mx-1">#{item} </span>
                         );
                       })}
                     </h5>

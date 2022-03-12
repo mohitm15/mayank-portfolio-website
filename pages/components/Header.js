@@ -21,9 +21,9 @@ const user = {
 const navigation = [
   { name: "Home", href: "/", current: false, index: 0 },
   { name: "About", href: "/about", current: false, index: 1 },
-  { name: "Projects", href: "projects", current: false, index: 2 },
-  { name: "Blogs", href: "blogs", current: false, index: 3 },
-  { name: "Contacts", href: "contact", current: false, index: 4 },
+  { name: "Projects", href: "/projects", current: false, index: 2 },
+  { name: "Blogs", href: "/blogs", current: false, index: 3 },
+  { name: "Contacts", href: "/contact", current: false, index: 4 },
 ];
 
 function classNames(...classes) {
@@ -51,13 +51,13 @@ const Header = () => {
                   <div className="hidden md:block">
                     <div className="ml-10 flex items-baseline space-x-8">
                       {navigation.map((item) => (
-                        <Link key={item.index} href={item.href}>
+                        <Link key={item.index} href={item.href} className="hover:drop-shadow-3xl hover:bg-white">
                           <a
                             key={item.name}
                             onClick={() => {
                               item.current = true;
                             }}
-                            className="active:bg-gray-600 focus:text-white focus:bg-gray-600 active:text-white text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+                            className=" focus:text-white active:text-white text-gray-300 hover:drop-shadow-4xl hover:text-white px-3 py-2 rounded-md text-base font-medium"
                             aria-current={item.current ? "page" : undefined}
                           >
                             {item.name}
