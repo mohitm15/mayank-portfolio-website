@@ -24,7 +24,7 @@ const Contact = () => {
             <div className="flex flex-col xl:flex-row space-y-5 xl:space-y-0 w-full py-10 md:p-20 md:w-6/12 xl:w-full m-auto xl:mx-5 items-center justify-center border-2 bg-[url('../public/space.png')]">
               <div className="flex flex-row w-full  ">
                 {/* Gmail */}
-                <motion.div animate={{y:[0,4,0,-4,0]}}  transition={{repeat:Infinity , duration:2}} whileTap={{scale:0.9}} className="p-2 md:p-3 lg:p-4 xl:p-5 2xl:p-6 hover:bg-gradient-to-r bg-slate-900 from-fuchsia-900  rounded-lg m-auto border-2">
+                <motion.div animate={{y:[0,4,0,-4,0]}}  transition={{repeat:Infinity , duration:2}} whileTap={{scale:0.9}} className="p-2 md:p-3 lg:p-4 xl:p-5 2xl:p-6 hover:bg-gradient-to-r bg-slate-900 from-fuchsia-900  rounded-lg m-auto border-2 ">
                   <a href="https://mail.google.com/mail/u/1/#inbox?compose=new" target="_blank" className="hover:text-yellow-500 ">
                     <SiGmail className="h-14 w-14 md:h-24 md:w-24 lg:h-28 lg:w-28 xl:h-32 xl:w-32 " />
                   </a>

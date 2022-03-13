@@ -29,6 +29,7 @@ import {
   SiVisualstudiocode,
 } from "react-icons/si";
 import { FaCss3, FaHtml5, FaNodeJs } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -66,7 +67,7 @@ const About = () => {
             </h2>
           </div>
           {/* web development */}
-          <div className="text-center m-2">
+          <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{ once:true}} transition={{delay:0.3}}  className="text-center m-2">
             <div>
               <h1 className="text-4xl md:text-5xl xl:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600 mb-4 lg:mb-6 xl:mb-8 z-10">
                 Web Development
@@ -150,10 +151,10 @@ const About = () => {
                 </span>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/*programming */}
-          <div className="text-center m-2">
+          <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{ once:true}} transition={{delay:0.3}} className="text-center m-2">
             <div>
               <h1 className="text-4xl md:text-5xl xl:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600 mb-4 lg:mb-6 xl:mb-8 z-10">
                 Programming
@@ -177,10 +178,10 @@ const About = () => {
                 </span>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* databases */}
-          <div className="text-center m-2">
+          <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{ once:true}} transition={{delay:0.3}}className="text-center m-2">
             <div>
               <h1 className="text-4xl md:text-5xl xl:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600 mb-4 lg:mb-6 xl:mb-8 z-10">
                 Databases
@@ -204,10 +205,10 @@ const About = () => {
                 </span>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* utilities */}
-          <div className="text-center m-2">
+          <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{ once:true}} transition={{delay:0.3}} className="text-center m-2">
             <div>
               <h1 className="text-4xl md:text-5xl xl:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600 mb-4 lg:mb-6 xl:mb-8 z-10">
                 Utilities
@@ -298,7 +299,7 @@ const About = () => {
                 </span>
               </div>
             </div>
-          </div>
+          </motion.div>
           
         </div>
 

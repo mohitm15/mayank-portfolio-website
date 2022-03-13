@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./components/Header";
 import Image from "next/image";
 import imgurl from "../public/dog.jpg";
+import { motion } from "framer-motion";
 
 const data = [
   {
@@ -63,7 +64,7 @@ const Blogs = () => {
               </h2>
             </div>
             <div className="container mx-auto">
-              <div className="flex flex-col space-y-2 sm:space-y-7 lg:space-y-10 justify-center items-center">
+              <motion.div initial={{x:-200}} whileInView={{x:0}}  viewport={{ once:true}} className="flex flex-col space-y-2 sm:space-y-7 lg:space-y-10 justify-center items-center">
                 {data.map((element) => {
                   return (
 <div key={element.sno} className="border-2 border-white py-4 lg:py-6 xl:py-10 px-4 lg:px-6 xl:px-10 w-full lg:w-4/5 xl:w-9/12   bg-gradient-to-t from-slate-900 ">
@@ -105,7 +106,7 @@ const Blogs = () => {
                   )
                 })}
                 
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
