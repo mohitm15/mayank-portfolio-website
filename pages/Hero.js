@@ -15,7 +15,7 @@ const Hero = (props) => {
                     Welcome To <br /> My Personal PortFolio
                   </h2>
                 </span>
-                <div className="hidden lg:block">
+                {/* <div className="hidden lg:block">
                   <div className="container">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ const Hero = (props) => {
                       />
                     </svg>
                   </div>
-                </div>
+                </div> */}
               </div>
               <div className="w-full text-justify sm:text-clip md:w-4/5 xl:w-3/5 p-3 hover:drop-shadow-2xl">
                 <p className="text-sm sm:text-xl text-gray-100/80 font-light sm:tracking-wider ">
