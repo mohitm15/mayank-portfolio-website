@@ -1,7 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const transition = { duration: 3, yoyo: Infinity, type:"spring", ease: "easeInOut" };
+const transition = {
+  duration: 3,
+  yoyo: Infinity,
+  type: "spring",
+  ease: "easeInOut",
+};
 const Hero = (props) => {
   return (
     <>
@@ -66,6 +71,8 @@ const Hero = (props) => {
           </div>
         </div>
       </main>
+      <motion.div  className="bg-[url('../public/removem4.png')] h-48 sm:h-60 sticky bottom-0 w-full drop-shadow-3xl">
+      </motion.div>
     </>
   );
 };
