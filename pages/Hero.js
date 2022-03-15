@@ -1,13 +1,26 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import Image from "next/image";
+import imgurl from '../public/planet.png';
+import imgurl2 from '../public/planet2.png';
 
-const transition = {
-  duration: 3,
-  yoyo: Infinity,
-  type: "spring",
-  ease: "easeInOut",
-};
-const Hero = (props) => {
+const Hero = () => {
+
+  const mountainVariant = {
+    animate: {
+      x : [0,-500],
+      transition: {
+        x: {
+          repeat:Infinity,
+          repeatType:"loop",
+          ease:"linear",
+          duration:4
+        }
+      }
+    }
+  }
+
   return (
     <>
       <main>
@@ -42,7 +55,7 @@ const Hero = (props) => {
                 </div> */}
               </div>
               <div className="w-full text-justify sm:text-clip md:w-4/5 xl:w-3/5 p-3 hover:drop-shadow-2xl">
-                <p className="text-sm sm:text-xl text-gray-100/80 font-light sm:tracking-wider ">
+                <p className="text-sm sm:text-xl text-gray-100/80 font-light sm:tracking-wider z-10">
                   Hello everyone, I am Mohit Maroliya. I am a Indian-based
                   Software Developer who has a slight inclination building
                   websites with good UI. Most of the time you can find me
@@ -52,11 +65,13 @@ const Hero = (props) => {
                   Visit this website to know about me more.
                 </p>
               </div>
+              
               <div className="py-4 sm:py-8 px-3 space-y-3 space-x-0 sm:space-y-0 sm:space-x-10 ">
+                <Link href="/about ">
                 <button className="text-white text-lg sm:text-xl font-bold py-3 px-6 bg-gradient-to-r from-teal-500/75 to-purple-500/50 rounded-2xl hover:border-[1px] border-white hover:drop-shadow-3xl ">
                   Learn More
                 </button>
-
+                </Link>
                 <button className="text-white text-lg sm:text-xl font-bold py-3 px-6 bg-gradient-to-r from-teal-500/75 to-purple-500/50 rounded-2xl hover:border-[1px] border-white hover:drop-shadow-3xl">
                   <a
                     href="https://drive.google.com/u/0/uc?id=18w36fVGMM2F2Vif8tEfhjG9nHLenjVsC&export=download"
@@ -70,8 +85,14 @@ const Hero = (props) => {
             </div>
           </div>
         </div>
+        <motion.div animate={{x:[0,200,300,400,500,700,850,1000,1200,1400,1600] ,y:[-300,-340,-380,-440,-500,-550,-620,-700,-800,-900]}} transition={{ repeat:Infinity, repeatType:"loop", duration:15}}>
+            <Image className="opacity-70 -z-100"  src={imgurl} height={150} width={150} />
+        </motion.div>
+        <motion.div animate={{x:[1600,1400,1200,1000,850,700,600,500,350,100,-200] ,y:[-900,-800,-700,-620,-550,-500,-420,-350,-300,-270]}} transition={{ repeat:Infinity, repeatType:"loop", duration:15}}>
+            <Image className="opacity-70 -z-100"  src={imgurl2} height={150} width={150} />
+        </motion.div>
       </main>
-      <motion.div  className="bg-[url('../public/removem4.png')] h-48 sm:h-60 sticky bottom-0 w-full drop-shadow-3xl">
+      <motion.div variants={mountainVariant} animate="animate"  className="bg-[url('../public/removem4.png')] h-48 sm:h-60 sticky bottom-0 w-full drop-shadow-3xl bg-repeat-x min-w-[2400px]">
       </motion.div>
     </>
   );
