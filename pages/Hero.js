@@ -2,10 +2,14 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import imgurl from '../public/planet.png';
-import imgurl2 from '../public/planet2.png';
+import imgurl from "../public/planet.png";
+import imgurl2 from "../public/planet2.png";
+import { useMediaQuery } from "@material-ui/core";
 
 const Hero = () => {
+
+  const isMobileorTablet = useMediaQuery("(max-width:1024px)") ;
+  //if your screen size is bigger than 1024px it returns false, otherwise it returns true
 
   const mountainVariant = {
     animate: {
@@ -21,6 +25,26 @@ const Hero = () => {
     }
   }
 
+  const planet1motion = isMobileorTablet ? {
+    x: [-100, 150, 200, 250, 350, 400],
+    y: [-400, -440, -480, -540, -600, -650],
+  }:{
+    x: [0, 200, 300, 400, 500, 700, 850, 1000, 1200, 1400, 1600],
+    y: [-300, -340, -380, -440, -500, -550, -620, -700, -800, -900],
+  }
+
+  const planet2motion = isMobileorTablet ? {
+    x: [400, 300, 250, 200, 150, 0],
+    y: [-650, -600, -500, -440, -420, -400],
+  } : {
+    x: [1600, 1400, 1200, 1000, 850, 700, 600, 500, 350, 100, -200],
+    y: [-900, -800, -700, -620, -550, -500, -420, -350, -300, -270],
+  }
+
+  const starmotion = isMobileorTablet ? {
+    x:[500,-100],y:[-170,-170]
+  } : {x:[1700,-550],y:[0,0]}
+
   return (
     <>
       <main>
@@ -33,26 +57,7 @@ const Hero = () => {
                     Welcome To <br /> My Personal PortFolio
                   </h2>
                 </span>
-                {/* <div className="hidden lg:block">
-                  <div className="container">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="451"
-                      height="437"
-                    >
-                      <motion.path
-                        d="M 239 17 C 142 17 48.5 103 48.5 213.5 C 48.5 324 126 408 244 408 C 362 408 412 319 412 213.5 C 412 108 334 68.5 244 68.5 C 154 68.5 102.68 135.079 99 213.5 C 95.32 291.921 157 350 231 345.5 C 305 341 357.5 290 357.5 219.5 C 357.5 149 314 121 244 121 C 174 121 151.5 167 151.5 213.5 C 151.5 260 176 286.5 224.5 286.5 C 273 286.5 296.5 253 296.5 218.5 C 296.5 184 270 177 244 177 C 218 177 197 198 197 218.5 C 197 239 206 250.5 225.5 250.5 C 245 250.5 253 242 253 218.5"
-                        fill="transparent"
-                        strokeWidth="15"
-                        stroke="rgba(255, 255, 255, 0.69)"
-                        strokeLinecap="round"
-                        initial={{ pathLength: 0 }}
-                        animate={{ pathLength: 1 }}
-                        transition={transition}
-                      />
-                    </svg>
-                  </div>
-                </div> */}
+                <motion.span animate={starmotion} transition={{ repeat: Infinity, repeatType: "loop", duration: isMobileorTablet ? 1:3, interval:3 }}  className="before:absolute before:-translate-y-2/4 before:w-72 before:h-px before:bg-gradient-to-r mt-px before:from-white absolute w-2 h-2 opacity-90 bg-white rounded-lg shadow-5xl"></motion.span>
               </div>
               <div className="w-full text-justify sm:text-clip md:w-4/5 xl:w-3/5 p-3 hover:drop-shadow-2xl">
                 <p className="text-sm sm:text-xl text-gray-100/80 font-light sm:tracking-wider z-10">
@@ -65,12 +70,12 @@ const Hero = () => {
                   Visit this website to know about me more.
                 </p>
               </div>
-              
+
               <div className="py-4 sm:py-8 px-3 space-y-3 space-x-0 sm:space-y-0 sm:space-x-10 ">
                 <Link href="/about ">
-                <button className="text-white text-lg sm:text-xl font-bold py-3 px-6 bg-gradient-to-r from-teal-500/75 to-purple-500/50 rounded-2xl hover:border-[1px] border-white hover:drop-shadow-3xl ">
-                  Learn More
-                </button>
+                  <button className="text-white text-lg sm:text-xl font-bold py-3 px-6 bg-gradient-to-r from-teal-500/75 to-purple-500/50 rounded-2xl hover:border-[1px] border-white hover:drop-shadow-3xl ">
+                    Learn More
+                  </button>
                 </Link>
                 <button className="text-white text-lg sm:text-xl font-bold py-3 px-6 bg-gradient-to-r from-teal-500/75 to-purple-500/50 rounded-2xl hover:border-[1px] border-white hover:drop-shadow-3xl">
                   <a
@@ -85,15 +90,34 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <motion.div animate={{x:[0,200,300,400,500,700,850,1000,1200,1400,1600] ,y:[-300,-340,-380,-440,-500,-550,-620,-700,-800,-900]}} transition={{ repeat:Infinity, repeatType:"loop", duration:15}}>
-            <Image className="opacity-70 -z-100"  src={imgurl} height={150} width={150} />
+        <motion.div layout="position"
+          animate={planet1motion}
+          transition={{ repeat: Infinity, repeatType: "loop", duration: 15 }}
+          className="h-16 w-16 lg:h-26 lg:w-26 xl:block"
+        >
+          <Image
+            className="opacity-70 -z-100  "
+            src={imgurl}
+            layout="fill"
+          />
         </motion.div>
-        <motion.div animate={{x:[1600,1400,1200,1000,850,700,600,500,350,100,-200] ,y:[-900,-800,-700,-620,-550,-500,-420,-350,-300,-270]}} transition={{ repeat:Infinity, repeatType:"loop", duration:15}}>
-            <Image className="opacity-70 -z-100"  src={imgurl2} height={150} width={150} />
+        <motion.div 
+          animate={planet2motion}
+          transition={{ repeat: Infinity, repeatType: "loop", duration: 10 }}
+          className="h-16 w-16 lg:h-26 lg:w-26 xl:block"
+        >
+          <Image
+            className="opacity-70 -z-100"
+            src={imgurl2}
+            layout="fill"
+          />
         </motion.div>
       </main>
-      <motion.div variants={mountainVariant} animate="animate"  className="bg-[url('../public/removem4.png')] h-48 sm:h-60 sticky bottom-0 w-full drop-shadow-3xl bg-repeat-x min-w-[2400px]">
-      </motion.div>
+      <motion.div
+        variants={mountainVariant}
+        animate="animate"
+        className="bg-[url('../public/removem4.png')] h-48 sm:h-60 sticky bottom-0 w-full drop-shadow-3xl bg-repeat-x min-w-[2400px] hidden xl:block"
+      ></motion.div>
     </>
   );
 };
