@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Header from "./components/Header";
 import Image from "next/image";
 import imgurl from "../public/dog.jpg";
@@ -32,6 +32,12 @@ import { FaCss3, FaHtml5, FaNodeJs } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const About = () => {
+
+  useEffect(() => {
+    document.title = "Mohit | About"
+  }, [])
+  
+
   return (
     <>
       <div className="min-h-full">
@@ -60,7 +66,7 @@ const About = () => {
               Software Development Engineer in a Software Company.
             </p>
           </div>
-          <div className="w-1/5 bg-gray-100 h-[1px] mx-auto mb-5 hover:drop-shadow-2xl"></div>
+          <motion.div animate={{y:[0,-4,0,4,0]}} transition={{repeat: Infinity, repeatType: "loop", duration:5}} className="w-1/5 bg-gray-100 h-[1px] mx-auto mb-5 hover:drop-shadow-2xl"></motion.div>
           <div className="max-w-7xl mx-auto md:py-5 lg:py-20 px-4 sm:px-2 lg:px-2">
             <h2 className="text-4xl md:text-6xl xl:text-6xl leading-snug md:leading-snug xl:leading-relaxed w-full text-transparent text-center bg-clip-text font-extrabold bg-gradient-to-tl from-white to-sky-500/10 p-2">
               My Skills

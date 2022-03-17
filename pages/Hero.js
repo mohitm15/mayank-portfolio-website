@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
@@ -7,6 +7,11 @@ import imgurl2 from "../public/planet2.png";
 import { useMediaQuery } from "@material-ui/core";
 
 const Hero = () => {
+
+  useEffect(() => {
+    document.title = "Mohit | Home"
+  }, [])
+  
 
   const isMobileorTablet = useMediaQuery("(max-width:1024px)") ;
   //if your screen size is bigger than 1024px it returns false, otherwise it returns true
@@ -42,25 +47,26 @@ const Hero = () => {
   }
 
   const starmotion = isMobileorTablet ? {
-    x:[500,-100],y:[-170,-170]
+    x:[100,-100],y:[-170,-170]
   } : {x:[1700,-550],y:[0,0]}
 
   return (
     <>
-      <main>
-        <div className="max-w-7xl mx-auto  shadow">
+      <main className="bg-[url('../public/stars3-1.png')]">
+        <div className="max-w-7xl mx-auto shadow ">
           <div className="px-4 py-6 sm:px-0">
             <div className="max-w-8xl mx-auto py-20 px-4 sm:px-6 lg:px-8">
               <div className="lg:flex lg:flex-row">
                 <span>
-                  <h2 className="text-4xl md:text-6xl xl:text-7xl leading-snug md:leading-snug xl:leading-relaxed w-full text-transparent bg-clip-text font-extrabold bg-gradient-to-r from-white to-sky-500/10 p-2">
+                  <h2 className="text-4xl md:text-6xl xl:text-7xl leading-snug md:leading-snug xl:leading-relaxed w-full text-transparent bg-clip-text font-extrabold bg-gradient-to-r from-white to-sky-500/10 p-2 opacity-100">
                     Welcome To <br /> My Personal PortFolio
                   </h2>
                 </span>
-                <motion.span animate={starmotion} transition={{ repeat: Infinity, repeatType: "loop", duration: isMobileorTablet ? 1:3, interval:3 }}  className="before:absolute before:-translate-y-2/4 before:w-72 before:h-px before:bg-gradient-to-r mt-px before:from-white absolute w-2 h-2 opacity-90 bg-white rounded-lg shadow-5xl"></motion.span>
+                {/* Shooting star disabled */}
+                {/* <motion.span animate={starmotion} transition={{ repeat: Infinity, repeatType: "loop", duration: isMobileorTablet ? 1:3, interval:3 }}  className="before:absolute before:-translate-y-2/4 before:w-72 before:h-px before:bg-gradient-to-r mt-px before:from-white absolute w-2 h-2 opacity-90 bg-white rounded-lg shadow-5xl animate-star hidden xl:block"></motion.span> */}
               </div>
-              <div className="w-full text-justify sm:text-clip md:w-4/5 xl:w-3/5 p-3 hover:drop-shadow-2xl">
-                <p className="text-sm sm:text-xl text-gray-100/80 font-light sm:tracking-wider z-10">
+              <div className="w-full text-justify sm:text-clip md:w-4/5 xl:w-3/5 p-3 hover:drop-shadow-2xl bg-opacity-50">
+                <p className="text-sm sm:text-xl text-gray-100/80 font-light sm:tracking-wider z-10 opacity-100">
                   Hello everyone, I am Mohit Maroliya. I am a Indian-based
                   Software Developer who has a slight inclination building
                   websites with good UI. Most of the time you can find me
@@ -71,7 +77,7 @@ const Hero = () => {
                 </p>
               </div>
 
-              <div className="py-4 sm:py-8 px-3 space-y-3 space-x-0 sm:space-y-0 sm:space-x-10 ">
+              <div className="py-4 sm:py-8 px-3 space-y-3 space-x-0 sm:space-y-0 sm:space-x-10 opacity-100">
                 <Link href="/about ">
                   <button className="text-white text-lg sm:text-xl font-bold py-3 px-6 bg-gradient-to-r from-teal-500/75 to-purple-500/50 rounded-2xl hover:border-[1px] border-white hover:drop-shadow-3xl ">
                     Learn More
@@ -113,11 +119,11 @@ const Hero = () => {
           />
         </motion.div>
       </main>
-      <motion.div
+      {/* <motion.div
         variants={mountainVariant}
         animate="animate"
         className="bg-[url('../public/removem4.png')] h-48 sm:h-60 sticky bottom-0 w-full drop-shadow-3xl bg-repeat-x min-w-[2400px] hidden xl:block"
-      ></motion.div>
+      ></motion.div> */}
     </>
   );
 };

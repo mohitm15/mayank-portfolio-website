@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Header from "./components/Header";
 import imgurl1s from "../public/mssmall.png";
 import imgurl1l from "../public/mslarge.png";
@@ -37,6 +37,10 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
 
+  useEffect(() => {
+    document.title = "Mohit | Projects"
+  }, [])
+  
   return (
     <>
       <div className="min-h-full">
@@ -48,7 +52,7 @@ const Projects = () => {
                 Welcome To My Projects
               </h2>
             </div>
-            <div className="p-5 border-2 border-red-400/20 flex flex-col lg:flex-col items-center justify-center ">
+            <div className="p-5 border-2 border-red-400/20 flex flex-col lg:flex-col items-center justify-center bg-[url('../public/stars2.jpg')]">
               <div className="p-2 sm:p-10 flex flex-col lg:flex-row items-center space-y-3 lg:space-y-0 lg:space-x-16 justify-center">
                 {/* card1  mschatapp*/}
                 <motion.div initial={{opacity:0.3}} whileInView={{opacity:1}} className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover: hover:to-[#b2eff7] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-oute ">
