@@ -39,8 +39,8 @@ const Hero = () => {
   }
 
   const planet2motion = isMobileorTablet ? {
-    x: [400, 300, 250, 200, 150, 0],
-    y: [-650, -600, -500, -440, -420, -400],
+    x: [350, 325, 300, 275, 250, 225, 200, 175, 150, 125, 100, 75, 50, 25, 0],
+    y: [-650,-625, -610, -600,-585,-575,-550,-525, -510,-490, -475, -450, -435, -415, -400],
   } : {
     x: [1600, 1556.8, 1494.4, 1440, 1433.6, 1352, 1288, 1163.2, 1124.8, 1036.8, 960, 880, 827.2, 800, 736, 696,640, 576, 480, 392, 329.6, 240, 160, 80, 0, -80, -160],
     y: [-886.68, -840, -809.4, -756, -720, -659.92, -605.88, -513.6, -480, -432, -398.4, -360, -337.4, -326.16, -301.08, -286.44, -267, -250.08, -218.64, -195.84, -181.2, -162, -146.52, -126, -120, -108.6],
@@ -99,7 +99,7 @@ const Hero = () => {
         <motion.div layout="position"
           animate={planet1motion}
           transition={{ repeat: Infinity, repeatType: "loop", duration: 15 }}
-          className="h-16 w-16 lg:h-26 lg:w-26 xl:block"
+          className="h-16 w-16 lg:h-26 lg:w-26 xl:block overflow-hidden"
         >
           <Image
             className="opacity-70 -z-100  "
@@ -110,7 +110,7 @@ const Hero = () => {
         <motion.div 
           animate={planet2motion}
           transition={{ repeat: Infinity, repeatType: "loop", duration: 20 }}
-          className="h-16 w-16 lg:h-26 lg:w-26 xl:block"
+          className="h-16 w-16 lg:h-26 lg:w-26 xl:block overflow-hidden"
         >
           <Image
             className="opacity-70 -z-100"

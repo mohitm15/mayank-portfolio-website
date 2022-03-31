@@ -394,6 +394,7 @@ const Projects = () => {
                   </div>
                 </motion.div>
               </div>
+
               <div className="p-2 sm:p-10 flex flex-col lg:flex-row items-center space-y-3 lg:space-y-0 lg:space-x-16 justify-center">
                 {/* card1 redux*/}
                 <motion.div initial={{opacity:0.3}} whileInView={{opacity:1}} className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover:from-[#fc91a1] hover:to-[#a7cffd] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-oute ">
@@ -550,6 +551,7 @@ const Projects = () => {
                   </div>
                 </motion.div>
               </div>
+              
               <div className="p-2 sm:p-10 flex flex-col lg:flex-row items-center space-y-3 lg:space-y-0 lg:space-x-16 justify-center">
                 {/* card1 timetravel*/}
                 <motion.div initial={{opacity:0.3}} whileInView={{opacity:1}} className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover:from-[#fc91a1] hover:to-[#a7cffd] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-oute ">
