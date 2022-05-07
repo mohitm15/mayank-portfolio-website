@@ -53,13 +53,13 @@ const data = [
 
 const Blogs = () => {
   useEffect(() => {
-    document.title = "Mayank | Blogs";
+    document.title = "Mayank Maroliya | Blogs";
   }, []);
 
   return (
     <>
       <div className="min-h-full">
-        <Header />
+        {/* <Header /> */}
         <div className=" mx-auto  shadow">
           <div className="px-4 py-6 sm:px-0 ">
             <div className="mx-auto py-20 px-4 sm:px-6 lg:px-8 ">

@@ -40,13 +40,13 @@ import { motion } from "framer-motion";
 const Projects = () => {
 
   useEffect(() => {
-    document.title = "Mayank | Projects"
+    document.title = "Mayank Maroliya | Projects"
   }, [])
   
   return (
     <>
       <div className="min-h-full">
-        <Header />
+        {/* <Header /> */}
         <div className=" mx-auto shadow container">
           <div className="px-4 py-6 sm:px-0">
             <div className="mx-auto py-20 px-4 sm:px-6 lg:px-8">
