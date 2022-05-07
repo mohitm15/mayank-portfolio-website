@@ -8,7 +8,7 @@ import { useMediaQuery } from "@material-ui/core";
 
 const Hero = () => {
   useEffect(() => {
-    document.title = "Mohit | Home";
+    document.title = "Mayank | Home";
   }, []);
 
   const isMobileorTablet = useMediaQuery("(max-width:1024px)");
@@ -85,7 +85,7 @@ const Hero = () => {
               </div>
               <div className="w-full text-justify sm:text-clip md:w-4/5 xl:w-3/5 p-3 hover:drop-shadow-2xl bg-opacity-50">
                 <p className="text-sm sm:text-xl text-gray-100/80 font-light sm:tracking-wider z-10 opacity-100">
-                  Hello everyone, I am Mohit Maroliya. I am a Indian-based
+                  Hello everyone, I am Mayank Maroliya. I am a Indian-based
                   Software Developer who has a slight inclination building
                   websites with good UI. Most of the time you can find me
                   writting code, playing chess and doing cycling.
@@ -104,7 +104,7 @@ const Hero = () => {
                 <button className="text-white text-lg sm:text-xl font-bold py-3 px-6 bg-gradient-to-r from-teal-500/75 to-purple-500/50 rounded-2xl hover:border-[1px] border-white hover:drop-shadow-3xl">
                   <a
                     href="https://drive.google.com/u/0/uc?id=18w36fVGMM2F2Vif8tEfhjG9nHLenjVsC&export=download"
-                    download="Resume_Mohit_Maroliya.pdf"
+                    download="Resume_Mayank_Maroliya.pdf"
                     target="_blank"
                   >
                     Download Resume{" "}
@@ -195,7 +195,7 @@ const Hero = () => {
             </section>
           </div>
         </div>
-        <motion.div
+        {/* <motion.div
           layout="position"
           animate={planet1motion}
           transition={{ repeat: Infinity, repeatType: "loop", duration: 15 }}
@@ -209,7 +209,7 @@ const Hero = () => {
           className="h-16 w-16 lg:h-26 lg:w-26 xl:block overflow-hidden"
         >
           <Image className="opacity-70 -z-100" src={imgurl2} layout="fill" />
-        </motion.div>
+        </motion.div> */}
       </main>
       {/* <motion.div
         variants={mountainVariant}

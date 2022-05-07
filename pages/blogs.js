@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const data = [
   {
     sno: 1,
-    author: "Mohit Maroliya",
+    author: "Mayank Maroliya",
     history: "Nov 21, 2022",
     likes: 20,
     title: "Starting with React-Redux",
@@ -17,7 +17,7 @@ const data = [
   },
   {
     sno: 2,
-    author: "Mohit Maroliya",
+    author: "Mayank Maroliya",
     history: "Dec 07, 2021",
     likes: 41,
     title: "Creating Super Buttons for Like, Share and Subscribe",
@@ -30,7 +30,7 @@ const data = [
   },
   {
     sno: 3,
-    author: "Mohit Maroliya",
+    author: "Mayank Maroliya",
     history: "Dec 31, 2021",
     likes: 30,
     title: "Creating Super Radio Buttons",
@@ -41,7 +41,7 @@ const data = [
   },
   {
     sno: 4,
-    author: "Mohit Maroliya",
+    author: "Mayank Maroliya",
     history: "Jan 12, 2022",
     likes: 13,
     title: "my-notebook using MongoDB",
@@ -53,7 +53,7 @@ const data = [
 
 const Blogs = () => {
   useEffect(() => {
-    document.title = "Mohit | Blogs";
+    document.title = "Mayank | Blogs";
   }, []);
 
   return (

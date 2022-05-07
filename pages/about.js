@@ -35,7 +35,7 @@ import { motion } from "framer-motion";
 const About = () => {
 
   useEffect(() => {
-    document.title = "Mohit | About"
+    document.title = "Mayank | About"
   }, [])
   
 
@@ -55,13 +55,13 @@ const About = () => {
             </div>
             <div className="max-w-7xl mx-auto md:py-5 lg:py-20 px-4 sm:px-2 lg:px-2">
               <h2 className="text-4xl md:text-6xl xl:text-8xl leading-snug md:leading-snug xl:leading-relaxed w-full text-transparent bg-clip-text font-extrabold bg-gradient-to-r from-white to-sky-500/10 p-2">
-                My Name is <br /> Mohit Maroliya
+                My Name is <br /> Mayank Maroliya
               </h2>
             </div>
           </div>
           <div className="px-5 container text-center mx-auto">
             <p className="text-sm sm:text-lg text-gray-100/80 font-light tracking-wider leading-normal pb-4 lg:pb-8 hover:text-white hover:drop-shadow-2xl">
-              My Name is <strong>Mohit Maroliya</strong>. I'm a Full Stack
+              My Name is <strong>Mayank Maroliya</strong>. I'm a Full Stack
               Developer. I completed my education from Indian Institute of
               Technology Jodhpur (2017-21) in CSE. Currently, I'm workings as a
               Software Development Engineer in a Software Company.

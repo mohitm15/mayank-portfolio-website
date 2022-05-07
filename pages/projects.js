@@ -40,7 +40,7 @@ import { motion } from "framer-motion";
 const Projects = () => {
 
   useEffect(() => {
-    document.title = "Mohit | Projects"
+    document.title = "Mayank | Projects"
   }, [])
   
   return (
