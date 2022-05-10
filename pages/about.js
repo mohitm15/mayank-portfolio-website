@@ -194,13 +194,12 @@ const About = () => {
                 </span>
               </div>
 
-
             </div>
           </motion.div>
           
         </div>
 
-        <div className="w-1/5 bg-gray-100 h-[2px] mx-auto my-10 hover:drop-shadow-2xl"></div>
+        <div className="w-1/5 h-[2px] mx-auto my-10 hover:drop-shadow-2xl"></div>
       </div>
     </>
   );
