@@ -1,26 +1,6 @@
 import React, { useEffect } from "react";
-import Header from "./components/Header";
-import imgurl1s from "../public/mssmall.png";
-import imgurl1l from "../public/mslarge.png";
-import imgurl2s from "../public/2small.jpeg";
-import imgurl2l from "../public/2large.png";
-import Image from "next/image";
-import {
-  SiBootstrap,
-  SiFramer,
-  SiJavascript,
-  SiLichess,
-  SiMongodb,
-  SiNextdotjs,
-  SiPostman,
-  SiReact,
-  SiRedux,
-  SiTailwindcss,
-} from "react-icons/si";
-import { FaNodeJs, FaEye, FaHtml5, FaCss3, FaSpotify } from "react-icons/fa";
-import { HiCode } from "react-icons/hi";
-import { AiOutlineApi } from "react-icons/ai";
 import { motion } from "framer-motion";
+import { FaBook } from "react-icons/fa";
 
 const Courses = () => {
   useEffect(() => {
@@ -44,361 +24,326 @@ const Courses = () => {
               </p>
             </div>
 
-            <div className="p-2 border-[1px] border-red-400/20 flex flex-col lg:flex-col items-center justify-center bg-[url('../public/stars2.jpg')]">
-              {/* row 1 */}
-              <div className="p-2 sm:p-10 flex flex-col lg:flex-row items-center space-y-3 lg:space-y-0 lg:space-x-16 justify-center w-full">
-                {/* card1  mschatapp*/}
-                <motion.div
-                  initial={{ opacity: 0.3 }}
-                  whileInView={{ opacity: 1 }}
-                  className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover: hover:to-[#b2eff7] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-oute "
-                >
-                  <div className="transition p-2 flex flex-col items-center bg-gradient-to-r from-[#ffa0ae,5%] to-[#b2eff7]  rounded-lg border shadow-md sm:flex-row  hover:cursor-pointer hover:from-[#ffa0ae,5%] hover:to-[#b2eff7] hover:transition hover:duration-500 ease-in-out  opacity-90 hover:opacity-100">
-                    {/* main content */}
-                    <div className="flex flex-col w-full">
-                      {/* heading */}
-                      <div className="flex flex-wrap sm:mx-auto sm:mb-2 -mx-2">
-                        <div className="p-2 ">
-                          <div className=" rounded-lg flex p-4 h-full justify-center items-center">
-                            <svg
-                              fill="none"
-                              stroke="currentColor"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="3"
-                              className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
-                              viewBox="0 0 24 24"
-                            >
-                              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                              <path d="M22 4L12 14.01l-3-3"></path>
-                            </svg>
-                            <span className="title-font text-blue-900 text-lg tracking-wide font-medium">
-                              Autumn Semester | 2020-21
-                            </span>
+            <div className="p-2 border-[1px] border-red-400/20 mx-auto bg-[url('../public/stars2.jpg')]">
+              {/* main container od cards */}
+              <div className="flex flex-col ">
+                {/* first 2 set */}
+                <div className="-mx-4 flex flex-col items-stretch lg:flex-row">
+                  {/* car1 */}
+                  <div className="flex-1 p-4">
+                    {/* first car */}
+                    <motion.div
+                      initial={{ opacity: 0.3 }}
+                      whileInView={{ opacity: 1 }}
+                      className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover: hover:to-[#b2eff7] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-out"
+                    >
+                      <div className="block h-full overflow-hidden rounded-lg border bg-gradient-to-r from-[#ffa0ae,5%] to-[#b2eff7] opacity-90 shadow-md transition ease-in-out hover:cursor-pointer hover:from-[#ffa0ae,5%] hover:to-[#b2eff7] hover:opacity-100 hover:transition hover:duration-500 sm:flex-row">
+                        <div className="p-4 sm:ml-16 md:ml-32 lg:ml-0">
+                          {/* heading */}
+                          <div className="-mx-2 flex flex-wrap text-center sm:mx-auto sm:mb-2">
+                            <div className="p-2">
+                              <div className="flex h-full items-center justify-center rounded-lg p-4">
+                                <svg
+                                  fill="none"
+                                  stroke="currentColor"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth="3"
+                                  className="mr-4 h-6 w-6 flex-shrink-0 text-indigo-500"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                  <path d="M22 4L12 14.01l-3-3"></path>
+                                </svg>
+                                <span className="title-font text-lg font-bold tracking-wide text-blue-900">
+                                  {" "}
+                                  Autumn Semester | 2021-22{" "}
+                                </span>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                      {/* table */}
-                      <div className="lg:px-4 lg:pb-2">
-                        <table className="table-auto lg:w-full text-left whitespace-no-wrap">
-                          <thead>
-                            <tr>
-                              <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100/50 rounded-tl rounded-bl w-1/5">
-                                Code
-                              </th>
-                              <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100/50 w-4/5">
-                                Name
-                              </th>
-                            </tr>
-                          </thead>
-                          <tbody className="text-gray-800 bg-gray-50/25">
-                            <tr>
-                              <td className="px-2 py-3">EN 407</td>
-                              <td className="px-2 py-3">
-                                Chemistry for Energy Science
-                              </td>
-                            </tr>
-                            <tr>
-                              <td className=" px-2 py-1">EN 409</td>
-                              <td className=" px-2 py-1">
-                                Mathematical Foundation for Energy Science
-                              </td>
-                            </tr>
-                            <tr>
-                              <td className="px-2 py-3">EN 407</td>
-                              <td className="px-2 py-3">
-                                Chemistry for Energy Science
-                              </td>
-                            </tr>
-                            <tr>
-                              <td className=" px-2 py-1">EN 409</td>
-                              <td className=" px-2 py-1">
-                                Mathematical Foundation for Energy Science
-                              </td>
-                            </tr>
-                            <tr>
-                              <td className="px-2 py-3">EN 407</td>
-                              <td className="px-2 py-3">
-                                Chemistry for Energy Science
-                              </td>
-                            </tr>
-                            <tr>
-                              <td className=" px-2 py-1">EN 409</td>
-                              <td className=" px-2 py-1">
-                                Mathematical Foundation for Energy Science
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-                {/* card2 chessmania*/}
-                <motion.div
-                  initial={{ opacity: 0.3 }}
-                  whileInView={{ opacity: 1 }}
-                  className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover: hover:to-[#b2eff7] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-oute "
-                >
-                  <div className="transition p-2 flex flex-col items-center bg-gradient-to-r from-[#ffa0ae,5%] to-[#b2eff7]  rounded-lg border shadow-md sm:flex-row  hover:cursor-pointer hover:from-[#ffa0ae,5%] hover:to-[#b2eff7] hover:transition hover:duration-500 ease-in-out  opacity-90 hover:opacity-100">
-                    {/* main content */}
-                    <div className="flex flex-col w-full">
-                      {/* heading */}
-                      <div className="flex flex-wrap sm:mx-auto sm:mb-2 -mx-2">
-                        <div className="p-2 ">
-                          <div className=" rounded-lg flex p-4 h-full justify-center items-center">
-                            <svg
-                              fill="none"
-                              stroke="currentColor"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="3"
-                              className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
-                              viewBox="0 0 24 24"
-                            >
-                              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                              <path d="M22 4L12 14.01l-3-3"></path>
-                            </svg>
-                            <span className="title-font text-blue-900 text-lg tracking-wide font-medium">
-                              Autumn Semester | 2020-21
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      {/* table */}
-                      <div className="lg:px-4 lg:pb-2">
-                        <table className="table-auto lg:w-full text-left whitespace-no-wrap">
-                          <thead>
-                            <tr>
-                              <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100/50 rounded-tl rounded-bl w-1/5">
-                                Code
-                              </th>
-                              <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100/50 w-4/5">
-                                Name
-                              </th>
-                            </tr>
-                          </thead>
-                          <tbody className="text-gray-800 bg-gray-50/25">
-                            <tr>
-                              <td className="px-2 py-3">EN 407</td>
-                              <td className="px-2 py-3">
-                                Chemistry for Energy Science
-                              </td>
-                            </tr>
-                            <tr>
-                              <td className=" px-2 py-1">EN 409</td>
-                              <td className=" px-2 py-1">
-                                Mathematical Foundation for Energy Science
-                              </td>
-                            </tr>
-                            <tr>
-                              <td className="px-2 py-3">EN 407</td>
-                              <td className="px-2 py-3">
-                                Chemistry for Energy Science
-                              </td>
-                            </tr>
-                            <tr>
-                              <td className=" px-2 py-1">EN 409</td>
-                              <td className=" px-2 py-1">
-                                Mathematical Foundation for Energy Science
-                              </td>
-                            </tr>
-                            <tr>
-                              <td className="px-2 py-3">EN 407</td>
-                              <td className="px-2 py-3">
-                                Chemistry for Energy Science
-                              </td>
-                            </tr>
-                            <tr>
-                              <td className=" px-2 py-1">EN 409</td>
-                              <td className=" px-2 py-1">
-                                Mathematical Foundation for Energy Science
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-              </div>
+                          <div className="lg:px-4 lg:pb-2">
+                            <table className="whitespace-no-wrap table-auto text-left lg:w-full">
+                              <thead>
+                                <tr>
+                                  <th className="title-font w-1/5 rounded-tl rounded-bl bg-gray-100/50 px-4 py-3 text-sm font-medium tracking-wider text-gray-900">
+                                    Code
+                                  </th>
+                                  <th className="title-font w-4/5 bg-gray-100/50 px-4 py-3 text-sm font-medium tracking-wider text-gray-900">
+                                    Name
+                                  </th>
+                                </tr>
+                              </thead>
+                              <tbody className="bg-gray-50/25 text-gray-800">
+                                <tr>
+                                  <td className="px-2 py-2">ME 651</td>
+                                  <td className="px-2 py-2">
+                                    Fluid Dynamics
+                                  </td>
+                                </tr>
 
-              {/* row 2 */}
-              <div className="p-2 sm:p-10 flex flex-col lg:flex-row items-center space-y-3 lg:space-y-0 lg:space-x-16 justify-center w-full">
-                {/* card1  mschatapp*/}
-                <motion.div
-                  initial={{ opacity: 0.3 }}
-                  whileInView={{ opacity: 1 }}
-                  className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover: hover:to-[#b2eff7] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-oute "
-                >
-                  <div className="transition p-2 flex flex-col items-center bg-gradient-to-r from-[#ffa0ae,5%] to-[#b2eff7]  rounded-lg border shadow-md sm:flex-row  hover:cursor-pointer hover:from-[#ffa0ae,5%] hover:to-[#b2eff7] hover:transition hover:duration-500 ease-in-out  opacity-90 hover:opacity-100">
-                    {/* main content */}
-                    <div className="flex flex-col w-full">
-                      {/* heading */}
-                      <div className="flex flex-wrap sm:mx-auto sm:mb-2 -mx-2">
-                        <div className="p-2 ">
-                          <div className=" rounded-lg flex p-4 h-full justify-center items-center">
-                            <svg
-                              fill="none"
-                              stroke="currentColor"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="3"
-                              className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
-                              viewBox="0 0 24 24"
-                            >
-                              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                              <path d="M22 4L12 14.01l-3-3"></path>
-                            </svg>
-                            <span className="title-font text-blue-900 text-lg tracking-wide font-medium">
-                              Autumn Semester | 2020-21
-                            </span>
+                                <tr>
+                                  <td className="px-2 py-2">ME 663</td>
+                                  <td className="px-2 py-2">
+                                    Advanced Heat Transfer
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td className="px-2 py-2">ME 673</td>
+                                  <td className="px-2 py-2">
+                                    Mathematical Modelling and Engineering
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td className="px-2 py-2">ME 899</td>
+                                  <td className="px-2 py-2">
+                                    Communication Skills
+                                  </td>
+                                </tr>
+                                
+                              </tbody>
+                            </table>
                           </div>
                         </div>
                       </div>
-                      {/* table */}
-                      <div className="lg:px-4 lg:pb-2">
-                        <table className="table-auto lg:w-full text-left whitespace-no-wrap">
-                          <thead>
-                            <tr>
-                              <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100/50 rounded-tl rounded-bl w-1/5">
-                                Code
-                              </th>
-                              <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100/50 w-4/5">
-                                Name
-                              </th>
-                            </tr>
-                          </thead>
-                          <tbody className="text-gray-800 bg-gray-50/25">
-                            <tr>
-                              <td className="px-2 py-3">EN 407</td>
-                              <td className="px-2 py-3">
-                                Chemistry for Energy Science
-                              </td>
-                            </tr>
-                            <tr>
-                              <td className=" px-2 py-1">EN 409</td>
-                              <td className=" px-2 py-1">
-                                Mathematical Foundation for Energy Science
-                              </td>
-                            </tr>
-                            <tr>
-                              <td className="px-2 py-3">EN 407</td>
-                              <td className="px-2 py-3">
-                                Chemistry for Energy Science
-                              </td>
-                            </tr>
-                            <tr>
-                              <td className=" px-2 py-1">EN 409</td>
-                              <td className=" px-2 py-1">
-                                Mathematical Foundation for Energy Science
-                              </td>
-                            </tr>
-                            <tr>
-                              <td className="px-2 py-3">EN 407</td>
-                              <td className="px-2 py-3">
-                                Chemistry for Energy Science
-                              </td>
-                            </tr>
-                            <tr>
-                              <td className=" px-2 py-1">EN 409</td>
-                              <td className=" px-2 py-1">
-                                Mathematical Foundation for Energy Science
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
+                    </motion.div>
                   </div>
-                </motion.div>
-                {/* card2 chessmania*/}
-                <motion.div
-                  initial={{ opacity: 0.3 }}
-                  whileInView={{ opacity: 1 }}
-                  className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover: hover:to-[#b2eff7] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-oute "
-                >
-                  <div className="transition p-2 flex flex-col items-center bg-gradient-to-r from-[#ffa0ae,5%] to-[#b2eff7]  rounded-lg border shadow-md sm:flex-row  hover:cursor-pointer hover:from-[#ffa0ae,5%] hover:to-[#b2eff7] hover:transition hover:duration-500 ease-in-out  opacity-90 hover:opacity-100">
-                    {/* main content */}
-                    <div className="flex flex-col w-full">
-                      {/* heading */}
-                      <div className="flex flex-wrap sm:mx-auto sm:mb-2 -mx-2">
-                        <div className="p-2 ">
-                          <div className=" rounded-lg flex p-4 h-full justify-center items-center">
-                            <svg
-                              fill="none"
-                              stroke="currentColor"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="3"
-                              className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
-                              viewBox="0 0 24 24"
-                            >
-                              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                              <path d="M22 4L12 14.01l-3-3"></path>
-                            </svg>
-                            <span className="title-font text-blue-900 text-lg tracking-wide font-medium">
-                              Autumn Semester | 2020-21
-                            </span>
+                  {/* car2 */}
+                  <div className="flex-1 p-4">
+                    {/* sec card */}
+                    <motion.div
+                      initial={{ opacity: 0.3 }}
+                      whileInView={{ opacity: 1 }}
+                      className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover: hover:to-[#b2eff7] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-out"
+                    >
+                      <div className="block h-full overflow-hidden rounded-lg border bg-gradient-to-r from-[#ffa0ae,5%] to-[#b2eff7] opacity-90 shadow-md transition ease-in-out hover:cursor-pointer hover:from-[#ffa0ae,5%] hover:to-[#b2eff7] hover:opacity-100 hover:transition hover:duration-500 sm:flex-row">
+                        <div className="p-4 sm:ml-16 md:ml-32 lg:ml-0">
+                          {/* heading */}
+                          <div className="-mx-2 flex flex-wrap text-center sm:mx-auto sm:mb-2">
+                            <div className="p-2">
+                              <div className="flex h-full items-center justify-center rounded-lg p-4">
+                                <svg
+                                  fill="none"
+                                  stroke="currentColor"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth="3"
+                                  className="mr-4 h-6 w-6 flex-shrink-0 text-indigo-500"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                  <path d="M22 4L12 14.01l-3-3"></path>
+                                </svg>
+                                <span className="title-font text-lg font-bold tracking-wide text-blue-900">
+                                  {" "}
+                                  Spring Semester | 2021-22{" "}
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="lg:px-4 lg:pb-2">
+                            <table className="whitespace-no-wrap table-auto text-left lg:w-full">
+                              <thead>
+                                <tr>
+                                  <th className="title-font w-1/5 rounded-tl rounded-bl bg-gray-100/50 px-4 py-3 text-sm font-medium tracking-wider text-gray-900">
+                                    Code
+                                  </th>
+                                  <th className="title-font w-4/5 bg-gray-100/50 px-4 py-3 text-sm font-medium tracking-wider text-gray-900">
+                                    Name
+                                  </th>
+                                </tr>
+                              </thead>
+                              <tbody className="bg-gray-50/25 text-gray-800">
+                                <tr>
+                                  <td className="px-2 py-2">ME 683</td>
+                                  <td className="px-2 py-2">
+                                    Cryogenic Engineering
+                                  </td>
+                                </tr>
+
+                                <tr>
+                                  <td className="px-2 py-2">ME 769</td>
+                                  <td className="px-2 py-2">
+                                    Combustion in Automobiles & Gas Turbines
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td className="px-2 py-2">MES 802</td>
+                                  <td className="px-2 py-2">
+                                    Course Seminar
+                                  </td>
+                                </tr>
+                                
+                              </tbody>
+                            </table>
                           </div>
                         </div>
                       </div>
-                      {/* table */}
-                      <div className="lg:px-4 lg:pb-2">
-                        <table className="table-auto lg:w-full text-left whitespace-no-wrap">
-                          <thead>
-                            <tr>
-                              <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100/50 rounded-tl rounded-bl w-1/5">
-                                Code
-                              </th>
-                              <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100/50 w-4/5">
-                                Name
-                              </th>
-                            </tr>
-                          </thead>
-                          <tbody className="text-gray-800 bg-gray-50/25">
-                            <tr>
-                              <td className="px-2 py-3">EN 407</td>
-                              <td className="px-2 py-3">
-                                Chemistry for Energy Science
-                              </td>
-                            </tr>
-                            <tr>
-                              <td className=" px-2 py-1">EN 409</td>
-                              <td className=" px-2 py-1">
-                                Mathematical Foundation for Energy Science
-                              </td>
-                            </tr>
-                            <tr>
-                              <td className="px-2 py-3">EN 407</td>
-                              <td className="px-2 py-3">
-                                Chemistry for Energy Science
-                              </td>
-                            </tr>
-                            <tr>
-                              <td className=" px-2 py-1">EN 409</td>
-                              <td className=" px-2 py-1">
-                                Mathematical Foundation for Energy Science
-                              </td>
-                            </tr>
-                            <tr>
-                              <td className="px-2 py-3">EN 407</td>
-                              <td className="px-2 py-3">
-                                Chemistry for Energy Science
-                              </td>
-                            </tr>
-                            <tr>
-                              <td className=" px-2 py-1">EN 409</td>
-                              <td className=" px-2 py-1">
-                                Mathematical Foundation for Energy Science
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
+                    </motion.div>
                   </div>
-                </motion.div>
+                </div>
+
+                {/* second 2 set */}
+                <div className="-mx-4 flex flex-col items-stretch lg:flex-row">
+                  {/* car1 */}
+                  <div className="flex-1 p-4">
+                    {/* first car */}
+                    <motion.div
+                      initial={{ opacity: 0.3 }}
+                      whileInView={{ opacity: 1 }}
+                      className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover: hover:to-[#b2eff7] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-out"
+                    >
+                      <div className="block h-full overflow-hidden rounded-lg border bg-gradient-to-r from-[#ffa0ae,5%] to-[#b2eff7] opacity-90 shadow-md transition ease-in-out hover:cursor-pointer hover:from-[#ffa0ae,5%] hover:to-[#b2eff7] hover:opacity-100 hover:transition hover:duration-500 sm:flex-row">
+                        <div className="p-4 sm:ml-16 md:ml-32 lg:ml-0">
+                          {/* heading */}
+                          <div className="-mx-2 flex flex-wrap text-center sm:mx-auto sm:mb-2">
+                            <div className="p-2">
+                              <div className="flex h-full items-center justify-center rounded-lg p-4">
+                                <svg
+                                  fill="none"
+                                  stroke="currentColor"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth="3"
+                                  className="mr-4 h-6 w-6 flex-shrink-0 text-indigo-500"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                  <path d="M22 4L12 14.01l-3-3"></path>
+                                </svg>
+                                <span className="title-font text-lg font-bold tracking-wide text-blue-900">
+                                  {" "}
+                                  Autumn Semester | 2021-22{" "}
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="lg:px-4 lg:pb-2">
+                            <table className="whitespace-no-wrap table-auto text-left lg:w-full">
+                              <thead>
+                                <tr>
+                                  <th className="title-font w-1/5 rounded-tl rounded-bl bg-gray-100/50 px-4 py-3 text-sm font-medium tracking-wider text-gray-900">
+                                    Code
+                                  </th>
+                                  <th className="title-font w-4/5 bg-gray-100/50 px-4 py-3 text-sm font-medium tracking-wider text-gray-900">
+                                    Name
+                                  </th>
+                                </tr>
+                              </thead>
+                              <tbody className="bg-gray-50/25 text-gray-800">
+                                <tr>
+                                  <td className="px-2 py-2">ME 651</td>
+                                  <td className="px-2 py-2">
+                                    Fluid Dynamics
+                                  </td>
+                                </tr>
+
+                                <tr>
+                                  <td className="px-2 py-2">ME 663</td>
+                                  <td className="px-2 py-2">
+                                    Advanced Heat Transfer
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td className="px-2 py-2">ME 673</td>
+                                  <td className="px-2 py-2">
+                                    Mathematical Modelling and Engineering
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td className="px-2 py-2">ME 899</td>
+                                  <td className="px-2 py-2">
+                                    Communication Skills
+                                  </td>
+                                </tr>
+                                
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </motion.div>
+                  </div>
+                  {/* car2 */}
+                  <div className="flex-1 p-4">
+                    {/* sec card */}
+                    <motion.div
+                      initial={{ opacity: 0.3 }}
+                      whileInView={{ opacity: 1 }}
+                      className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover: hover:to-[#b2eff7] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-out"
+                    >
+                      <div className="block h-full overflow-hidden rounded-lg border bg-gradient-to-r from-[#ffa0ae,5%] to-[#b2eff7] opacity-90 shadow-md transition ease-in-out hover:cursor-pointer hover:from-[#ffa0ae,5%] hover:to-[#b2eff7] hover:opacity-100 hover:transition hover:duration-500 sm:flex-row">
+                        <div className="p-4 sm:ml-16 md:ml-32 lg:ml-0">
+                          {/* heading */}
+                          <div className="-mx-2 flex flex-wrap text-center sm:mx-auto sm:mb-2">
+                            <div className="p-2">
+                              <div className="flex h-full items-center justify-center rounded-lg p-4">
+                                <svg
+                                  fill="none"
+                                  stroke="currentColor"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth="3"
+                                  className="mr-4 h-6 w-6 flex-shrink-0 text-indigo-500"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                  <path d="M22 4L12 14.01l-3-3"></path>
+                                </svg>
+                                <span className="title-font text-lg font-bold tracking-wide text-blue-900">
+                                  {" "}
+                                  Autumn Semester | 2021-22{" "}
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="lg:px-4 lg:pb-2">
+                            <table className="whitespace-no-wrap table-auto text-left lg:w-full">
+                              <thead>
+                                <tr>
+                                  <th className="title-font w-1/5 rounded-tl rounded-bl bg-gray-100/50 px-4 py-3 text-sm font-medium tracking-wider text-gray-900">
+                                    Code
+                                  </th>
+                                  <th className="title-font w-4/5 bg-gray-100/50 px-4 py-3 text-sm font-medium tracking-wider text-gray-900">
+                                    Name
+                                  </th>
+                                </tr>
+                              </thead>
+                              <tbody className="bg-gray-50/25 text-gray-800">
+                                <tr>
+                                  <td className="px-2 py-2">ME 651</td>
+                                  <td className="px-2 py-2">
+                                    Fluid Dynamics
+                                  </td>
+                                </tr>
+
+                                <tr>
+                                  <td className="px-2 py-2">ME 663</td>
+                                  <td className="px-2 py-2">
+                                    Advanced Heat Transfer
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td className="px-2 py-2">ME 673</td>
+                                  <td className="px-2 py-2">
+                                    Mathematical Modelling and Engineering
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td className="px-2 py-2">ME 899</td>
+                                  <td className="px-2 py-2">
+                                    Communication Skills
+                                  </td>
+                                </tr>
+                                
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </motion.div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
