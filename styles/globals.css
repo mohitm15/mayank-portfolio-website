@@ -11,7 +11,7 @@ body {
 
 
 .gearcontainer {
-  height: 40%;
+  height: 50%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -29,7 +29,7 @@ body {
 .machine {
   width: 40vmin;
   fill: white;
-  opacity:0.5;
+  opacity:0.8;
 }
 
 .small-shadow,
