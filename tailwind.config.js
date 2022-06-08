@@ -26,6 +26,9 @@ module.exports = {
         "5xl":
           "0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1)",
       },
+      fontFamily: {
+        PlayFair:["PlayFair Display","serif"]
+      }
     },
     animation:{
       star: 'star 3s linear infinite;'

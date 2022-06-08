@@ -25,7 +25,7 @@ const Hero = () => {
             <div className="max-w-8xl mx-auto pt-20 px-4 sm:px-6 lg:px-8">
               <div className="lg:flex lg:flex-row">
                 <span>
-                  <h2 className="text-4xl md:text-6xl xl:text-7xl leading-snug md:leading-snug xl:leading-relaxed w-full text-transparent bg-clip-text font-extrabold bg-gradient-to-r from-white to-sky-500/30 p-2 opacity-100">
+                  <h2 className="text-4xl md:text-6xl xl:text-8xl leading-snug md:leading-snug xl:leading-normal w-full text-transparent bg-clip-text font-extrabold font-PlayFair bg-gradient-to-r from-white to-sky-500/30 p-2 opacity-100">
                     This is <br /> Mayank Maroliya !
                   </h2>
                 </span>
@@ -123,7 +123,7 @@ const Hero = () => {
             {/* testimonials */}
             <section className="text-gray-600 body-font">
               <div className="container mx-auto">
-                <h1 className="text-3xl md:text-5xl xl:text-6xl leading-snug md:leading-snug xl:leading-relaxed w-full text-transparent bg-clip-text font-extrabold bg-gradient-to-r from-white to-sky-500/10 p-2 opacity-100 text-center mb-10">
+                <h1 className="text-3xl md:text-5xl xl:text-6xl leading-snug md:leading-snug xl:leading-relaxed w-full text-transparent bg-clip-text font-extrabold font-PlayFair bg-gradient-to-r from-white to-sky-500/10 p-2 opacity-100 text-center mb-10">
                   Testimonials
                 </h1>
                 <div className="flex flex-wrap -m-4">

@@ -14,7 +14,7 @@ const Courses = () => {
         <div className=" mx-auto shadow container">
           <div className="px-4 py-6 sm:px-0">
             <div className="mx-auto md:pt-20 md:pb-5 px-4 sm:px-6 lg:px-8">
-              <h2 className="text-4xl md:text-6xl xl:text-7xl leading-snug md:leading-snug xl:leading-relaxed w-full text-transparent bg-clip-text font-extrabold bg-gradient-to-r from-white to-sky-500/10 p-2 text-center">
+              <h2 className="text-4xl md:text-6xl xl:text-8xl leading-snug md:leading-snug xl:leading-relaxed w-full text-transparent bg-clip-text font-extrabold font-PlayFair  bg-gradient-to-r from-white to-sky-500/10 p-2 text-center">
                 Courses @ IIT Bombay
               </h2>
             </div>

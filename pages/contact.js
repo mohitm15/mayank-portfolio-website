@@ -21,8 +21,8 @@ const Contact = () => {
         {/* <Header /> */}
         <div className="mx-auto shadow container">
           <div className="px-4 py-6 sm:px-0">
-            <div className="mx-auto py-20 px-4 sm:px-6 lg:px-8">
-              <h2 className="text-4xl md:text-6xl xl:text-7xl  leading-snug md:leading-snug xl:leading-relaxed w-full text-transparent bg-clip-text font-extrabold bg-gradient-to-r from-white to-sky-500/10 p-2 text-center">
+            <div className="mx-auto py-10 sm:py-20 px-4 sm:px-6 lg:px-8">
+              <h2 className="text-4xl md:text-6xl xl:text-7xl  leading-snug md:leading-snug xl:leading-relaxed w-full text-transparent bg-clip-text font-extrabold font-PlayFair bg-gradient-to-r from-white to-sky-500/10 p-2 text-center">
                 Let's Connect
               </h2>
             </div>
