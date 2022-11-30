@@ -8,47 +8,60 @@ const data = [
   {
     sno: 1,
     author: "Mayank Maroliya",
-    history: "Nov 21, 2022",
+    history: "July 2021 - Present",
     likes: 20,
-    title: "Starting with React-Redux",
-    tags: ["react", "redux", "webdev", "beginners"],
-    content: `Hello everyone, this is my first post on Dev.to. In this post, I am trying to explain the use of Redux in ReactJS with an example. Here, I have taken some references from YouTube and Google for information. I will first explain to you the need for Redux and explain it with the code. For reference, you can check out Github to view the code ...`,
-    link: "https://dev.to/mohitm15/starting-with-react-redux-1dno",
+    title: "Development & Application of Solid Solid-PCM for Thermal Management of Electronics.",
+    subtitle:"Dr. Sandip K. Saha, Professor, IIT Bombay",
+    content: `The project aims to develop a novel solid-solid phase change material for the spacecraft cooling system with the stability of PCM of more than 1000 thermal cycles. Second, to determine the optimum percentage of thermal conductivity enhancer. Third, to develop a reliable and optimally sized hybrid (SS-PCM and heat pipe) honeycomb panel for better isothermalization of the electronics chips at 35-45°C. Fourth, to develop a detailed numerical model of solid-solid phase change material to assess the dynamic melting behaviour. Fifth, to develop an experimental setup consisting of solid-solid PCM and heat pipe in a honeycomb panel, and last, to characterize the thermal performance of honeycomb panels experimentally under continuous and cyclic loading. To evaluate the efficacy of SS-PCM in comparison with solid-liquid (SL)-PCM. For more details, go through the attached write-up.
+    `,
+    link: "https://drive.google.com/file/d/1RyF0Ro7tkMgCcvKuZWFldQWyUsDqn_Ts/view?usp=sharing",
+    disable:true,
   },
   {
     sno: 2,
     author: "Mayank Maroliya",
-    history: "Dec 07, 2021",
+    history: "Dec. 2020 - June 2021",
     likes: 41,
-    title: "Creating Super Buttons for Like, Share and Subscribe",
-    tags: ["beginners", "html", "css", "javascript"],
-    content: `Whenever you watches any YouTube video, I'm sure you have come across the terms Like, Share and Subscribe.
-      I wanted to create a cool html-css button that represents the feeling of Like-Share-Subscribe.
-      For this we require a html file index.html, css file style.css and javaScript file index.js.
-      The end result for Like button is like this:`,
-    link: "https://dev.to/mohitm15/creating-super-buttons-for-like-share-and-subscribe-gef",
+    title: "Development of a model for energy storage and recovery in cold start engine",
+    subtitle:"Dr. Devendra Deshmukh, Associate Professor, IIT Indore",
+    content: `The aim is to find potential solutions for storing exhaust waste energy using phase change material & utilizing it to recover the cold start of an engine. Developed a detailed numerical model in the MATLAB environment and validated it with the experimental results. We also submitted a conference paper at the National Conference on IC Engines & Combustion (NCICEC)-2021. For more details, go through the attached write-up.`,
+    link: "https://drive.google.com/file/d/1kdE-MtEGR6kw-WdLLPrgixbuOZ6Vj53W/view?usp=sharing",
+    disable:false,
   },
   {
     sno: 3,
     author: "Mayank Maroliya",
-    history: "Dec 31, 2021",
+    history: "Feb 2021- Apr 2021",
     likes: 30,
-    title: "Creating Super Radio Buttons",
-    tags: ["beginners", "html", "css", "webdev"],
-    content: `In the last post , I had shared to create SuperLike, SuperShare and SuperSubscribe buttons.
-      In this post, I will show how to create a cool html-css radio button that represents the feeling of animated radio-button. For this we require a html file index.htmland a css file style.css only. ...`,
-    link: "https://dev.to/mohitm15/creating-super-radio-buttons-ip8",
+    title: "Investigation of PCM-based Organic Rankine Cycle for Diesel Engine Waste Heat Recovery",
+    subtitle:"Dr. Devendra Deshmukh, Mr. Varshil Parikh, Spray & Combustion Lab, IIT Indore.",
+    content: `Developed & validated a simulation model that governs the ORC-WHR system’s performance for different PCMs & working fluid. I Majorly work in research paper writing and assisting in evaluating numerical results. We submitted the paper to the International Journal of Thermal Science and the manuscript is under review. For more details, go through the attached write-up.`,
+    link: "https://drive.google.com/file/d/156LJtulgajYUwXhNwyLKbeH80jae0E2K/view?usp=sharing",
+    disable:false,
   },
   {
     sno: 4,
     author: "Mayank Maroliya",
-    history: "Jan 12, 2022",
+    history: "Sept. 2019 – May 2021",
     likes: 13,
-    title: "my-notebook using MongoDB",
-    tags: ["atlashackathon", "mongodb", "react", "webdev"],
-    content: `Today, writing notes is very important in order to stay organised. Especially in Corperate sector, When you write all your tasks in form of notes, they seem more manageable. When you've got a clear outline of the tasks you've got to do and those you've completed, it helps you stay focused. Also it works as a reminder for you ...`,
-    link: "https://dev.to/mohitm15/my-notebook-using-mongodb-2ej6",
+    title: "Development of a standalone, accurate, and portable Sphygmomanometer",
+    subtitle:"Dr. Devendra Deshmukh, Associate Professor, IIT Indore.",
+    content: `The objective is to develop an accurate, portable & standalone Sphygmomanometer with a remote monitoring facility using the Korotkoff sound method. I majorly worked on algorithm development, Data Analysis, Fabrication & technical writing part.  We also filed a patent for the device & device is under medical review. For more details, go through the attached write-up.`,
+    link: "https://drive.google.com/file/d/1NOp7taxPGrUK_tUAiGqgq7Cmw8uHuHb3/view?usp=sharing",
+    disable:false,
   },
+  {
+    sno: 5,
+    author: "Mayank Maroliya",
+    history: "Nov. 2019 - Dec. 2019",
+    likes: 13,
+    title: "DIC’s Terrace Farming Challenge",
+    subtitle:"Robotics, Machine Design, CAD, FEA, and Product Manufacturing",
+    content:"This project is one of the key problem statements for one of the major events at the 8th Inter IIT Tech Meet, held at IIT Roorkee. I worked as a Design & Manufacturing team Head, designing & analyzing a novel lightweight farming robot for terrace farms capable of climbing up and down the stairs & able to perform all other farming operations too. For more details, go through the attached write-up.",
+    link: "https://drive.google.com/file/d/1m8rtXv4WukTz__RzMSVrZP9WKibXMEuw/view?usp=sharing",
+    disable:false,
+  },
+
 ];
 
 const Research = () => {
@@ -64,7 +77,7 @@ const Research = () => {
           <div className="px-4 py-6 sm:px-0 ">
             <div className="mx-auto py-10 xl:py-20 px-4 sm:px-6 lg:px-8 ">
               <h2 className="text-4xl md:text-6xl xl:text-7xl leading-snug md:leading-snug xl:leading-relaxed w-full text-transparent bg-clip-text font-extrabold font-PlayFair bg-gradient-to-r from-white to-sky-500/10 p-2 text-center">
-                Welcome To My Research Work
+              Welcome to My Research Work and Major Projects
               </h2>
             </div>
             <div className="container mx-auto">
@@ -95,17 +108,11 @@ const Research = () => {
                         </h3>
                       </div>
                       <div className="py-4 flex flex-col space-y-5">
-                        <h2 className="text-2xl lg:text-4xl xl:text-5xl font-bold">
+                        <h2 className="text-2xl lg:text-3xl xl:text-4xl font-bold">
                           {element.title}
                         </h2>
-                        <h5 className="text-white opacity-60 text-sm xl:text-lg ">
-                          {element.tags.map((item) => {
-                            return (
-                              <span key={item} className="text-lime-500 mx-1 drop-shadow-2xl">
-                                #{item}{" "}
-                              </span>
-                            );
-                          })}
+                        <h5 className=" text-yellow-300 text-sm xl:text-lg ">
+                          {element.subtitle}
                         </h5>
                         <p className="leading-relaxed lg:text-base xl:text-lg">
                           {element.content}
@@ -113,9 +120,14 @@ const Research = () => {
                       </div>
                       <div className="m-auto mt-3 xl:mt-10 text-center">
                         <button className="border-2 border-white p-2 xl:px-4 xl:py-3 uppercase text-sm xl:text-base lg:text-sm hover:bg-slate-700 drop-shadow-3xl">
-                          <a href={element.link} target="_blank">
+                          { element.disable ? <a href="" target="_blank">
                             Read full post
-                          </a>
+                            </a> : 
+
+                            <a href={element.link} target="_blank">
+                            Read full post
+                            </a>
+                          }
                         </button>
                       </div>
                     </div>

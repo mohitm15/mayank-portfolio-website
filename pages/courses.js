@@ -173,6 +173,12 @@ const Courses = () => {
                                     Course Seminar
                                   </td>
                                 </tr>
+                                <tr>
+                                  <td className="px-2 py-2">GEC 101</td>
+                                  <td className="px-2 py-2">
+                                  Gender in the workplace
+                                  </td>
+                                </tr>
                                 
                               </tbody>
                             </table>
@@ -213,7 +219,7 @@ const Courses = () => {
                                 </svg>
                                 <span className="title-font text-lg font-bold tracking-wide text-blue-900">
                                   {" "}
-                                  Autumn Semester | 2021-22{" "}
+                                  Autumn Semester | 2022-23{" "}
                                 </span>
                               </div>
                             </div>
@@ -232,30 +238,21 @@ const Courses = () => {
                               </thead>
                               <tbody className="bg-gray-50/25 text-gray-800">
                                 <tr>
-                                  <td className="px-2 py-2">ME 651</td>
+                                  <td className="px-2 py-2">ME 662</td>
                                   <td className="px-2 py-2">
-                                    Fluid Dynamics
+                                Convective Heat Transfer	
+
                                   </td>
                                 </tr>
 
                                 <tr>
-                                  <td className="px-2 py-2">ME 663</td>
+                                  <td className="px-2 py-2">AE 780</td>
                                   <td className="px-2 py-2">
-                                    Advanced Heat Transfer
+                                  Computational Heat Transfer and Fluid Flow
+
                                   </td>
                                 </tr>
-                                <tr>
-                                  <td className="px-2 py-2">ME 673</td>
-                                  <td className="px-2 py-2">
-                                    Mathematical Modelling and Engineering
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td className="px-2 py-2">ME 899</td>
-                                  <td className="px-2 py-2">
-                                    Communication Skills
-                                  </td>
-                                </tr>
+                                
                                 
                               </tbody>
                             </table>
@@ -292,7 +289,7 @@ const Courses = () => {
                                 </svg>
                                 <span className="title-font text-lg font-bold tracking-wide text-blue-900">
                                   {" "}
-                                  Autumn Semester | 2021-22{" "}
+                                  Spring Semester | 2022-23{" "}
                                 </span>
                               </div>
                             </div>
@@ -311,30 +308,19 @@ const Courses = () => {
                               </thead>
                               <tbody className="bg-gray-50/25 text-gray-800">
                                 <tr>
-                                  <td className="px-2 py-2">ME 651</td>
+                                  <td className="px-2 py-2">TBD</td>
                                   <td className="px-2 py-2">
-                                    Fluid Dynamics
+                                    TBD
                                   </td>
                                 </tr>
 
                                 <tr>
-                                  <td className="px-2 py-2">ME 663</td>
+                                  <td className="px-2 py-2">TBD</td>
                                   <td className="px-2 py-2">
-                                    Advanced Heat Transfer
+                                  TBD
                                   </td>
                                 </tr>
-                                <tr>
-                                  <td className="px-2 py-2">ME 673</td>
-                                  <td className="px-2 py-2">
-                                    Mathematical Modelling and Engineering
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td className="px-2 py-2">ME 899</td>
-                                  <td className="px-2 py-2">
-                                    Communication Skills
-                                  </td>
-                                </tr>
+                                
                                 
                               </tbody>
                             </table>

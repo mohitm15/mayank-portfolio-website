@@ -14,19 +14,8 @@ import {
   SiMaterialui,
   SiCplusplus,
   SiPython,
-  SiMysql,
-  SiGit,
-  SiPostman,
-  SiDocker,
-  SiYoutubestudio,
-  SiHeroku,
-  SiNetlify,
-  SiVercel,
-  SiAdobephotoshop,
-  SiPhotopea,
-  SiLinux,
   SiOverleaf,
-  SiVisualstudiocode,
+  SiDassaultsystemes,
   SiAnsys,
   SiMicrosoftword,
   SiMicrosoftpowerpoint,
@@ -63,19 +52,18 @@ const About = () => {
             </div>
           </div>
           <div className="px-5 container text-center mx-auto">
-            <p className="text-sm sm:text-2xl  text-gray-100/80 font-light tracking-wider leading-normal pb-4 lg:pb-8 hover:text-white hover:drop-shadow-2xl">
-              My Name is <strong>Mayank Maroliya</strong>. I am a PMRF Scholar
-              and active Research Scholar in the Department of Mechanical
-              Energy, Indian Institute of Technology Bombay. I am currently
-              pursuing my doctoral studies under the guidance{" "}
+            <p className="text-sm sm:text-2xl  text-gray-100/80 font-light tracking-wider leading-normal pb-4 lg:pb-8 hover:text-white hover:drop-shadow-2xl text-justify">
+              This is <strong>Mayank Maroliya</strong>. Currently, I am pursuing
+              doctoral studies (Ph.D.) in the Mechanical Engineering department
+              at IIT Bombay under Prime Minister's Research Fellowship (PMRF)
+              scheme. I'm working in the area of{" "}
               <span className="underline underline-offset-[4px] decoration-pink-300">
-                Prof. Sandeep Kumar Saha{" "}
+                solid-solid phase change materials for thermal management
               </span>{" "}
-              under the topic{" "}
-              <span className="underline underline-offset-[4px] decoration-pink-300">
-                Thermodynamics & Thermal Science
-              </span>
-              .
+              . Previously, I had done my undergrad at the Indian Institute of
+              Technology Indore in Mechanical Engineering. Skilled in CAD
+              Designing and Computational heat transfer, my passion aligns with
+              my devotion to analysing and simulating Engineering problems.
             </p>
           </div>
 
@@ -93,7 +81,8 @@ const About = () => {
               My Skills
             </h2>
           </div> */}
-          {/* web development */}
+
+          {/* skills */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -124,7 +113,14 @@ const About = () => {
               <div className=" mx-auto flex-row justify-center items-center">
                 <SiCplusplus className="h-16 w-16 md:h-20 md:w-20 lg:h-24 lg:w-24 xl:h-32 xl:w-32 hover:drop-shadow-3xl opacity-90 hover:opacity-100" />
                 <span className="text-center lg:text-lg sm:ml-1 md:ml-2 lg:ml-4 xl:ml-7 ">
-                  C++
+                  Altair
+                </span>
+              </div>
+
+              <div className=" mx-auto flex-row justify-center items-center">
+                <SiDassaultsystemes className="h-16 w-16 md:h-20 md:w-20 lg:h-24 lg:w-24 xl:h-32 xl:w-32 hover:drop-shadow-3xl opacity-90 hover:opacity-100" />
+                <span className="text-center lg:text-lg sm:ml-1 md:ml-2 lg:ml-4 xl:ml-7 ">
+                  DS-CATIA
                 </span>
               </div>
 
@@ -136,23 +132,16 @@ const About = () => {
               </div>
 
               <div className=" mx-auto flex-row justify-center items-center">
-                <SiMicrosoftword className="h-16 w-16 md:h-20 md:w-20 lg:h-24 lg:w-24 xl:h-32 xl:w-32 hover:drop-shadow-3xl opacity-90 hover:opacity-100" />
+                <SiDassaultsystemes className="h-16 w-16 md:h-20 md:w-20 lg:h-24 lg:w-24 xl:h-32 xl:w-32 hover:drop-shadow-3xl opacity-90 hover:opacity-100" />
                 <span className="text-center lg:text-lg sm:ml-1 md:ml-2 lg:ml-4 xl:ml-7 ">
-                  MS-Word
-                </span>
-              </div>
-
-              <div className=" mx-auto flex-row justify-center items-center">
-                <SiMicrosoftpowerpoint className="h-16 w-16 md:h-20 md:w-20 lg:h-24 lg:w-24 xl:h-32 xl:w-32 hover:drop-shadow-3xl opacity-90 hover:opacity-100" />
-                <span className="text-center lg:text-lg sm:ml-1 md:ml-2 lg:ml-4 xl:ml-7 ">
-                  MS-PowerPoint
+                  DS SolidWorks
                 </span>
               </div>
 
               <div className=" mx-auto flex-row justify-center items-center">
                 <SiMicrosoftteams className="h-16 w-16 md:h-20 md:w-20 lg:h-24 lg:w-24 xl:h-32 xl:w-32 hover:drop-shadow-3xl opacity-90 hover:opacity-100" />
                 <span className="text-center lg:text-lg sm:ml-1 md:ml-2 lg:ml-4 xl:ml-7 ">
-                  MS-Teams
+                  MATLAB
                 </span>
               </div>
 
@@ -171,107 +160,103 @@ const About = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
-            className="text-center mx-2 my-8"
+            className="text-center mx-2 my-8 xl:my-12"
           >
             <div>
               <h1 className="text-4xl md:text-5xl xl:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600 z-10">
                 Research Interest
               </h1>
 
-              <section className="text-gray-600 body-font">
-                <div className="container px-5 py-10 mx-auto flex flex-wrap">
-                  <div className="lg:w-2/3 mx-auto">
-                    <div className="flex flex-wrap w-full bg-gray-100 py-32 px-10 relative mb-4">
-                      <img
-                        alt="gallery"
-                        className="w-full object-cover h-full object-center block opacity-25 absolute inset-0"
-                        src="https://dummyimage.com/820x340"
-                      />
-                      <div className="text-center relative z-10 w-full">
-                        <h2 className="text-2xl text-gray-900 font-medium title-font mb-2">
-                          Shooting Stars
+              <section className="text-gray-300 body-font ">
+                <div className="container px-5 py-12 mx-auto">
+                  <div className="flex flex-wrap -m-4">
+                    <div className="xl:w-1/3 md:w-1/2 p-4">
+                      <div className="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                        <h2 className="text-lg text-white font-extrabold title-font mb-2">
+                          01
                         </h2>
-                        <p className="leading-relaxed">
-                          Skateboard +1 mustache fixie paleo lumbersexual.
-                        </p>
-                        <a className="mt-3 text-indigo-500 inline-flex items-center">
-                          May 2022 - May 2023
-                          <svg
-                            fill="none"
-                            stroke="currentColor"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            className="w-4 h-4 ml-2"
-                            viewBox="0 0 24 24"
-                          >
-                            <path d="M5 12h14M12 5l7 7-7 7"></path>
-                          </svg>
-                        </a>
+                        <p className="leading-relaxed text-base">IC Engines</p>
                       </div>
                     </div>
-                    <div className="flex flex-wrap -mx-2">
-                      <div className="px-2 w-1/2">
-                        <div className="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
-                          <img
-                            alt="gallery"
-                            className="w-full object-cover h-full object-center block opacity-25 absolute inset-0"
-                            src="https://dummyimage.com/542x460"
-                          />
-                          <div className="text-center relative z-10 w-full">
-                            <h2 className="text-xl text-gray-900 font-medium title-font mb-2">
-                              Shooting Stars
-                            </h2>
-                            <p className="leading-relaxed">
-                              Skateboard +1 mustache fixie paleo lumbersexual.
-                            </p>
-                            <a className="mt-3 text-indigo-500 inline-flex items-center">
-                              Learn More
-                              <svg
-                                fill="none"
-                                stroke="currentColor"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                className="w-4 h-4 ml-2"
-                                viewBox="0 0 24 24"
-                              >
-                                <path d="M5 12h14M12 5l7 7-7 7"></path>
-                              </svg>
-                            </a>
-                          </div>
-                        </div>
+                    <div className="xl:w-1/3 md:w-1/2 p-4">
+                      <div className="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                        <h2 className="text-lg text-white font-extrabold title-font mb-2">
+                          02
+                        </h2>
+                        <p className="leading-relaxed text-base">
+                          Heat Transfer & CFD
+                        </p>
                       </div>
-                      <div className="px-2 w-1/2">
-                        <div className="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
-                          <img
-                            alt="gallery"
-                            className="w-full object-cover h-full object-center block opacity-25 absolute inset-0"
-                            src="https://dummyimage.com/542x420"
-                          />
-                          <div className="text-center relative z-10 w-full">
-                            <h2 className="text-xl text-gray-900 font-medium title-font mb-2">
-                              Shooting Stars
-                            </h2>
-                            <p className="leading-relaxed">
-                              Skateboard +1 mustache fixie paleo lumbersexual.
-                            </p>
-                            <a className="mt-3 text-indigo-500 inline-flex items-center">
-                              May 2022 - May 2023
-                              <svg
-                                fill="none"
-                                stroke="currentColor"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                className="w-4 h-4 ml-2"
-                                viewBox="0 0 24 24"
-                              >
-                                <path d="M5 12h14M12 5l7 7-7 7"></path>
-                              </svg>
-                            </a>
-                          </div>
-                        </div>
+                    </div>
+                    <div className="xl:w-1/3 md:w-1/2 p-4">
+                      <div className="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                        <h2 className="text-lg text-white font-extrabold title-font mb-2">
+                          03
+                        </h2>
+                        <p className="leading-relaxed text-base">
+                          Numerical Modeling
+                        </p>
+                      </div>
+                    </div>
+                    <div className="xl:w-1/3 md:w-1/2 p-4">
+                      <div className="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                        <h2 className="text-lg text-white font-extrabold title-font mb-2">
+                          04
+                        </h2>
+                        <p className="leading-relaxed text-base">
+                          Thermodynamics
+                        </p>
+                      </div>
+                    </div>
+                    <div className="xl:w-1/3 md:w-1/2 p-4">
+                      <div className="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                        <h2 className="text-lg text-white font-extrabold title-font mb-2">
+                          05
+                        </h2>
+                        <p className="leading-relaxed text-base">
+                          Cryogenic Engineering
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="xl:w-1/3 md:w-1/2 p-4">
+                      <div className="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                        <h2 className="text-lg text-white font-extrabold title-font mb-2">
+                          06
+                        </h2>
+                        <p className="leading-relaxed text-base">
+                          CAE & CAD Design
+                        </p>
+                      </div>
+                    </div>
+                    <div className="xl:w-1/3 md:w-1/2 p-4">
+                      <div className="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                        <h2 className="text-lg text-white font-extrabold title-font mb-2">
+                          07
+                        </h2>
+                        <p className="leading-relaxed text-base">
+                          Waste Heat Recovery Systems
+                        </p>
+                      </div>
+                    </div>
+                    <div className="xl:w-1/3 md:w-1/2 p-4">
+                      <div className="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                        <h2 className="text-lg text-white font-extrabold title-font mb-2">
+                          08
+                        </h2>
+                        <p className="leading-relaxed text-base">
+                          PCM-based Energy Storage Systems
+                        </p>
+                      </div>
+                    </div>
+                    <div className="xl:w-1/3 md:w-1/2 p-4">
+                      <div className="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                        <h2 className="text-lg text-white font-extrabold title-font mb-2">
+                          09
+                        </h2>
+                        <p className="leading-relaxed text-base">
+                          Design & dynamics of Heat Exchangers
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -290,7 +275,7 @@ const About = () => {
           >
             <div>
               <h1 className="text-4xl md:text-5xl xl:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600 mb-4 z-10">
-                Teaching Experience
+                PMRF Teaching Deliverables
               </h1>
               <section className="text-gray-400  body-font">
                 <div className="container px-5 py-10 mx-auto flex flex-wrap">
@@ -317,12 +302,15 @@ const About = () => {
                       </div>
                       <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
                         <h2 className="font-medium title-font text-white mb-1 text-xl">
-                          Indian Institute of Technology Goa | May 20 - June 20
+                          Dr. Ambedkar Institute of Technology, Bengaluru
+                          (Karnataka), 560056
                         </h2>
                         <p className="leading-relaxed">
-                          Worked as a Professor and teaches the course ME101 -{" "}
-                          <span className="font-bold">Basic About Matlab</span>{" "}
-                          to First Year BTech Graduates.
+                          Taught 70-80 students regarding{" "}
+                          <span className="font-bold">
+                            Basics of MATLAB programming.
+                          </span>{" "}
+                          Took <b> 14 Lectures</b>.
                         </p>
                       </div>
                     </div>
@@ -350,12 +338,15 @@ const About = () => {
                       </div>
                       <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
                         <h2 className="font-medium title-font text-white mb-1 text-xl">
-                          Indian Institute of Technology Goa | May 20 - June 20
+                          Sri Vasavi Engineering College, Tadepalligudem,
+                          Warangal Dist. (A.P.), 534101.
                         </h2>
                         <p className="leading-relaxed">
-                          Worked as a Professor and teaches the course ME101 -{" "}
-                          <span className="font-bold">Basic About Matlab</span>{" "}
-                          to First Year BTech Graduates.
+                          Taught ‘40’ B.E 3rd-year students about{" "}
+                          <span className="font-bold">
+                            Steam Nozzles and Gas Turbines.
+                          </span>{" "}
+                          Took <b> 14 Lectures</b>.
                         </p>
                       </div>
                     </div>
@@ -384,12 +375,12 @@ const About = () => {
                       </div>
                       <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
                         <h2 className="font-medium title-font text-white mb-1 text-xl">
-                          Indian Institute of Technology Goa | May 20 - June 20
+                          Teaching Assistant, ME 316, Applied Thermodynamics
                         </h2>
                         <p className="leading-relaxed">
-                          Worked as a Professor and teaches the course ME101 -{" "}
-                          <span className="font-bold">Basic About Matlab</span>{" "}
-                          to First Year BTech Graduates.
+                          Prepare assignments, quizzes, and examination papers.
+                          weekly tutorials assist the students in their course
+                          projects, under institute TA duty.
                         </p>
                       </div>{" "}
                     </div>
@@ -418,12 +409,12 @@ const About = () => {
                       </div>
                       <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
                         <h2 className="font-medium title-font text-white mb-1 text-xl">
-                          Indian Institute of Technology Goa | May 20 - June 20
+                          Teaching Assistant, ME 209 Thermodynamics
                         </h2>
                         <p className="leading-relaxed">
-                          Worked as a Professor and teaches the course ME101 -{" "}
-                          <span className="font-bold">Basic About Matlab</span>{" "}
-                          to First Year BTech Graduates.
+                          Prepare assignments, quizzes, and examination papers.
+                          weekly tutorials assist the students in their course
+                          projects, under institute TA duty.
                         </p>
                       </div>
                     </div>
@@ -443,156 +434,69 @@ const About = () => {
           >
             <div>
               <h1 className="text-4xl md:text-5xl xl:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600 mb-4 z-10">
-                LeaderShip Roles @IITB
+                Position of Responsibilities
               </h1>
               <section className="text-gray-400  body-font">
                 <div className="container px-5 py-10 mx-auto">
                   <div className="flex flex-wrap -m-4">
-                    <div className="p-4 lg:w-1/3">
+                    <div className="p-4 lg:w-1/2">
                       <div className="h-full bg-gray-800 bg-opacity-40 hover:bg-opacity-70 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-                        <h2 className="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">
+                        <h2 className="tracking-widest text-xs title-font font-medium text-gray-500 mb-4">
                           IIT BOMBAY
                         </h2>
-                        <h1 className="title-font sm:text-2xl text-xl font-medium text-white mb-3">
-                          Raclette Blueberry Nextious Level
+                        <h1 className=" sm:text-2xl xl:text-3xl font-medium text-white mb-3">
+                          PMRF Research Scholar
                         </h1>
                         <p className="leading-relaxed mb-3">
-                          Photo booth fam kinfolk cold-pressed sriracha leggings
-                          jianbing microdosing tousled waistcoat.
+                          Department of Mechanical Engineering
                         </p>
                         <a className="text-pink-400 inline-flex items-center">
-                          May 2022 - May 2023
-                          
+                          May 2022 - Present
                         </a>
-                        <div className="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
-                          <span className="text-gray-500 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-700 border-opacity-50">
-                            <svg
-                              className="w-4 h-4 mr-1"
-                              stroke="currentColor"
-                              strokeWidth="2"
-                              fill="none"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              viewBox="0 0 24 24"
-                            >
-                              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                              <circle cx="12" cy="12" r="3"></circle>
-                            </svg>
-                            1.2K
-                          </span>
-                          <span className="text-gray-500 inline-flex items-center leading-none text-sm">
-                            <svg
-                              className="w-4 h-4 mr-1"
-                              stroke="currentColor"
-                              strokeWidth="2"
-                              fill="none"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              viewBox="0 0 24 24"
-                            >
-                              <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                            </svg>
-                            6
-                          </span>
-                        </div>
                       </div>
                     </div>
-                    <div className="p-4 lg:w-1/3">
+                    <div className="p-4 lg:w-1/2">
                       <div className="h-full bg-gray-800 bg-opacity-40 hover:bg-opacity-70 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
                         <h2 className="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">
                           IIT BOMBAY
                         </h2>
-                        <h1 className="title-font sm:text-2xl text-xl font-medium text-white mb-3">
-                          Ennui Snackwave Thundercats
+                        <h1 className=" sm:text-2xl xl:text-3xl font-medium text-white mb-3">
+                          Ph.D. Placement Representative
                         </h1>
-                        <p className="leading-relaxed mb-3">
-                          Photo booth fam kinfolk cold-pressed sriracha leggings
-                          jianbing microdosing tousled waistcoat.
-                        </p>
+                        <p className="leading-relaxed mb-3">Placement Team</p>
                         <a className="text-pink-400 inline-flex items-center">
-                          May 2022 - May 2023
-                          
+                          Sept 2022 - Present
                         </a>
-                        <div className="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
-                          <span className="text-gray-500 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-700 border-opacity-50">
-                            <svg
-                              className="w-4 h-4 mr-1"
-                              stroke="currentColor"
-                              strokeWidth="2"
-                              fill="none"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              viewBox="0 0 24 24"
-                            >
-                              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                              <circle cx="12" cy="12" r="3"></circle>
-                            </svg>
-                            1.2K
-                          </span>
-                          <span className="text-gray-500 inline-flex items-center leading-none text-sm">
-                            <svg
-                              className="w-4 h-4 mr-1"
-                              stroke="currentColor"
-                              strokeWidth="2"
-                              fill="none"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              viewBox="0 0 24 24"
-                            >
-                              <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                            </svg>
-                            6
-                          </span>
-                        </div>
                       </div>
                     </div>
-                    <div className="p-4 lg:w-1/3">
+                    <div className="p-4 lg:w-1/2">
+                      <div className="h-full bg-gray-800 bg-opacity-40 hover:bg-opacity-70 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                        <h2 className="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">
+                          IIT INDORE
+                        </h2>
+                        <h1 className=" sm:text-2xl xl:text-3xl font-medium text-white mb-3">
+                          Student Head
+                        </h1>
+                        <p className="leading-relaxed mb-3">The CAE Club</p>
+                        <a className="text-pink-400 inline-flex items-center">
+                          May 2019 - Oct 2020
+                        </a>
+                      </div>
+                    </div>
+                    <div className="p-4 lg:w-1/2">
                       <div className="h-full bg-gray-800 bg-opacity-40 hover:bg-opacity-70 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
                         <h2 className="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">
                           IIT BOMBAY
                         </h2>
-                        <h1 className="title-font sm:text-2xl text-xl font-medium text-white mb-3">
-                          Selvage Poke Waistcoat Godard
+                        <h1 className=" sm:text-2xl xl:text-3xl font-medium text-white mb-3">
+                          Team Captain
                         </h1>
                         <p className="leading-relaxed mb-3">
-                          Photo booth fam kinfolk cold-pressed sriracha leggings
-                          jianbing microdosing tousled waistcoat.
+                          Chess Team, Hostel-14
                         </p>
                         <a className="text-pink-400 inline-flex items-center">
-                          May 2022 - May 2023
-                          
+                          Aug 2022 - Present
                         </a>
-                        <div className="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
-                          <span className="text-gray-500 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-700 border-opacity-50">
-                            <svg
-                              className="w-4 h-4 mr-1"
-                              stroke="currentColor"
-                              strokeWidth="2"
-                              fill="none"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              viewBox="0 0 24 24"
-                            >
-                              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                              <circle cx="12" cy="12" r="3"></circle>
-                            </svg>
-                            1.2K
-                          </span>
-                          <span className="text-gray-500 inline-flex items-center leading-none text-sm">
-                            <svg
-                              className="w-4 h-4 mr-1"
-                              stroke="currentColor"
-                              strokeWidth="2"
-                              fill="none"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              viewBox="0 0 24 24"
-                            >
-                              <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                            </svg>
-                            6
-                          </span>
-                        </div>
                       </div>
                     </div>
                   </div>

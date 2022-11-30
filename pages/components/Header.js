@@ -11,12 +11,12 @@ import {
 } from "react-icons/ai";
 import { ImCross } from "react-icons/im";
 import Image from "next/image";
-import imageurl from '../../public/Ash.jpg';
+import imageurl from '../../public/mayank.png';
 
 
 const user = {
-  name: "Mohit Maroliya",
-  email: "mmaroliya@gmail.com",
+  name: "Mayank Maroliya",
+  email: "mayankmaroliya@gmail.com",
 };
 const navigation = [
   { name: "Home", href: "/", current: false, index: 0 },
@@ -71,13 +71,9 @@ const Header = () => {
                 </div>
                 <div className="hidden md:block">
                   <div className="ml-4 flex items-center md:ml-6 space-x-3">
+                    
                     <span className="p-1 rounded-lg ease-in duration-200 hover:bg-[#212d45] hover:scale-125 hover:cursor-pointer">
-                      <a href="https://github.com/mohitm15">
-                        <AiFillGithub className="h-7 w-7" aria-hidden="true" />
-                      </a>
-                    </span>
-                    <span className="p-1 rounded-lg ease-in duration-200 hover:bg-[#212d45] hover:scale-125 hover:cursor-pointer">
-                      <a href="https://www.linkedin.com/in/mohit-maroliya-38b230172/">
+                      <a href="https://www.linkedin.com/in/mayankmaroliya/">
                         <AiFillLinkedin
                           className="h-7 w-7"
                           aria-hidden="true"
@@ -85,7 +81,7 @@ const Header = () => {
                       </a>
                     </span>
                     <span className="p-1 rounded-lg ease-in duration-200 hover:bg-[#212d45] hover:scale-125 hover:cursor-pointer">
-                      <a href="https://google.comhttps://www.youtube.com/channel/UCLDS5LaNHR6NEKYgQEPe9FA">
+                      <a href="https://www.youtube.com/channel/UC2H8mkcHqBievpxf1sSpzMg">
                         <AiFillYoutube className="h-7 w-7" aria-hidden="true" />
                       </a>
                     </span>
