@@ -3,25 +3,14 @@ import Image from "next/image";
 import imgurl from "../public/mayank.png";
 import imgurl2 from "../public/satelite.png";
 import {
-  SiBootstrap,
-  SiExpress,
-  SiJavascript,
-  SiMongodb,
   SiAutodesk,
-  SiReact,
-  SiTailwindcss,
-  SiFramer,
-  SiMaterialui,
   SiCplusplus,
   SiPython,
   SiOverleaf,
   SiDassaultsystemes,
   SiAnsys,
-  SiMicrosoftword,
-  SiMicrosoftpowerpoint,
   SiMicrosoftteams,
 } from "react-icons/si";
-import { FaCss3, FaHtml5, FaNodeJs } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const About = () => {
@@ -170,7 +159,7 @@ const About = () => {
               <section className="text-gray-300 body-font ">
                 <div className="container px-5 py-12 mx-auto">
                   <div className="flex flex-wrap -m-4">
-                    <div className="xl:w-1/3 md:w-1/2 p-4">
+                    <div className="xl:w-1/3 md:w-1/2 w-full p-4">
                       <div className="border border-gray-700 border-opacity-75 p-6 rounded-lg">
                         <h2 className="text-lg text-white font-extrabold title-font mb-2">
                           01
@@ -178,7 +167,7 @@ const About = () => {
                         <p className="leading-relaxed text-base">IC Engines</p>
                       </div>
                     </div>
-                    <div className="xl:w-1/3 md:w-1/2 p-4">
+                    <div className="xl:w-1/3 md:w-1/2 w-full p-4">
                       <div className="border border-gray-700 border-opacity-75 p-6 rounded-lg">
                         <h2 className="text-lg text-white font-extrabold title-font mb-2">
                           02
@@ -188,7 +177,7 @@ const About = () => {
                         </p>
                       </div>
                     </div>
-                    <div className="xl:w-1/3 md:w-1/2 p-4">
+                    <div className="xl:w-1/3 md:w-1/2 w-full p-4">
                       <div className="border border-gray-700 border-opacity-75 p-6 rounded-lg">
                         <h2 className="text-lg text-white font-extrabold title-font mb-2">
                           03
@@ -198,7 +187,7 @@ const About = () => {
                         </p>
                       </div>
                     </div>
-                    <div className="xl:w-1/3 md:w-1/2 p-4">
+                    <div className="xl:w-1/3 md:w-1/2 w-full p-4">
                       <div className="border border-gray-700 border-opacity-75 p-6 rounded-lg">
                         <h2 className="text-lg text-white font-extrabold title-font mb-2">
                           04
@@ -208,7 +197,7 @@ const About = () => {
                         </p>
                       </div>
                     </div>
-                    <div className="xl:w-1/3 md:w-1/2 p-4">
+                    <div className="xl:w-1/3 md:w-1/2 w-full p-4">
                       <div className="border border-gray-700 border-opacity-75 p-6 rounded-lg">
                         <h2 className="text-lg text-white font-extrabold title-font mb-2">
                           05
@@ -219,7 +208,7 @@ const About = () => {
                       </div>
                     </div>
 
-                    <div className="xl:w-1/3 md:w-1/2 p-4">
+                    <div className="xl:w-1/3 md:w-1/2 w-full p-4">
                       <div className="border border-gray-700 border-opacity-75 p-6 rounded-lg">
                         <h2 className="text-lg text-white font-extrabold title-font mb-2">
                           06
@@ -229,7 +218,7 @@ const About = () => {
                         </p>
                       </div>
                     </div>
-                    <div className="xl:w-1/3 md:w-1/2 p-4">
+                    <div className="xl:w-1/3 md:w-1/2 w-full p-4">
                       <div className="border border-gray-700 border-opacity-75 p-6 rounded-lg">
                         <h2 className="text-lg text-white font-extrabold title-font mb-2">
                           07
@@ -239,7 +228,7 @@ const About = () => {
                         </p>
                       </div>
                     </div>
-                    <div className="xl:w-1/3 md:w-1/2 p-4">
+                    <div className="xl:w-1/3 md:w-1/2 w-full p-4">
                       <div className="border border-gray-700 border-opacity-75 p-6 rounded-lg">
                         <h2 className="text-lg text-white font-extrabold title-font mb-2">
                           08
@@ -249,7 +238,7 @@ const About = () => {
                         </p>
                       </div>
                     </div>
-                    <div className="xl:w-1/3 md:w-1/2 p-4">
+                    <div className="xl:w-1/3 md:w-1/2 w-full p-4">
                       <div className="border border-gray-700 border-opacity-75 p-6 rounded-lg">
                         <h2 className="text-lg text-white font-extrabold title-font mb-2">
                           09
@@ -455,7 +444,7 @@ const About = () => {
                         </a>
                       </div>
                     </div>
-                    <div className="p-4 lg:w-1/2">
+                    <div className="p-4 w-full lg:w-1/2">
                       <div className="h-full bg-gray-800 bg-opacity-40 hover:bg-opacity-70 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
                         <h2 className="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">
                           IIT BOMBAY
@@ -469,7 +458,7 @@ const About = () => {
                         </a>
                       </div>
                     </div>
-                    <div className="p-4 lg:w-1/2">
+                    <div className="p-4 w-full lg:w-1/2">
                       <div className="h-full bg-gray-800 bg-opacity-40 hover:bg-opacity-70 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
                         <h2 className="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">
                           IIT INDORE
@@ -483,7 +472,7 @@ const About = () => {
                         </a>
                       </div>
                     </div>
-                    <div className="p-4 lg:w-1/2">
+                    <div className="p-4 w-full lg:w-1/2">
                       <div className="h-full bg-gray-800 bg-opacity-40 hover:bg-opacity-70 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
                         <h2 className="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">
                           IIT BOMBAY

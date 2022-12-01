@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import { FaBook } from "react-icons/fa";
 
 const Courses = () => {
   useEffect(() => {

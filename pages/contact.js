@@ -1,11 +1,9 @@
 import React, {useEffect} from "react";
-import Header from "./components/Header";
 import {
-  AiFillGithub,
   AiFillLinkedin,
   AiFillYoutube,
 } from "react-icons/ai";
-import { SiGmail, SiDevdotto, SiLichess } from "react-icons/si";
+import { SiGmail } from "react-icons/si";
 import { motion } from "framer-motion";
 
 

@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Header from "./components/Header";
 import Image from "next/image";
 import imgurl from "../public/dog.jpg";
 import { motion } from "framer-motion";

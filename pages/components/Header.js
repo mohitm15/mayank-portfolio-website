@@ -5,7 +5,6 @@ import { useRouter } from "next/router";
 import {
   AiFillLinkedin,
   AiFillYoutube,
-  AiFillGithub,
   AiOutlineMenu,
   AiFillBell,
 } from "react-icons/ai";
