@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import Image from "next/image";
 import imgurl from "../public/mayank.png";
 import { motion } from "framer-motion";
-import Researchdata from "./data/researchdata";
 
 const data = [
   {

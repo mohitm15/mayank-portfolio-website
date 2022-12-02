@@ -1,5 +1,4 @@
-function Researchdata (){
-    return [
+const Researchdata = [
     {
       sno: 1,
       author: "Mayank Maroliya",
@@ -58,5 +57,5 @@ function Researchdata (){
     },
   
   ];
-}
+
 
