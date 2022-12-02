@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
-import imgurl from "../public/dog.jpg";
+import imgurl from "../public/mayank.png";
 import { motion } from "framer-motion";
+import Researchdata from "./data/researchdata";
 
 const data = [
   {
@@ -76,7 +77,7 @@ const Research = () => {
           <div className="px-4 py-6 sm:px-0 ">
             <div className="mx-auto py-10 xl:py-20 px-4 sm:px-6 lg:px-8 ">
               <h2 className="text-4xl md:text-6xl xl:text-7xl leading-snug md:leading-snug xl:leading-relaxed w-full text-transparent bg-clip-text font-extrabold font-PlayFair bg-gradient-to-r from-white to-sky-500/10 p-2 text-center">
-              Welcome to My Research Work and Major Projects
+                 Research Work and Major Projects
               </h2>
             </div>
             <div className="container mx-auto">
@@ -97,7 +98,7 @@ const Research = () => {
                           src={imgurl}
                           width="35"
                           height="35"
-                          className="rounded-2xl border-2 border-white"
+                          className="rounded-2xl border-2 object-cover object-top border-white"
                         />
                         <h3 className="font-medium text-lg">
                           {element.author} &nbsp;|

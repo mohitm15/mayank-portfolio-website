@@ -1,7 +1,6 @@
 import React from "react";
 import { Disclosure, Menu } from "@headlessui/react";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import {
   AiFillLinkedin,
   AiFillYoutube,
@@ -90,7 +89,7 @@ const Header = () => {
                         <Menu.Button className="max-w-xs bg-gray-800 rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                           <span className="sr-only">Open user menu</span>
                           <Image
-                            className="h-8 w-8 rounded-full bg-red-300"
+                            className="h-8 w-8 rounded-full object-cover object-top bg-red-300"
                             height={'30rem'}
                             width={'35  rem'}
                             src={imageurl}
