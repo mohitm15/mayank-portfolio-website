@@ -2,6 +2,10 @@ import React from 'react';
 import { motion } from "framer-motion";
 
 const ResearchInterest = () => {
+  const data = [
+    "IC Engines","Heat Transfer & CFD","Numerical Modeling","Thermodynamics","Cryogenic Engineering","CAE & CAD Design",
+    "Waste Heat Recovery Systems","PCM-based Energy Storage Systems","Design & dynamics of Heat Exchangers"
+  ]
   return (
     <>
     <motion.div
@@ -19,95 +23,20 @@ const ResearchInterest = () => {
               <section className="text-gray-300 body-font ">
                 <div className="container px-5 py-12 mx-auto">
                   <div className="flex flex-wrap -m-4">
-                    <div className="xl:w-1/3 md:w-1/2 w-full p-4">
+                    {
+                      data.map((item,index)=>{
+                        return(
+                          <div key={index} className="xl:w-1/3 md:w-1/2 w-full p-4">
                       <div className="border border-gray-700 border-opacity-75 p-6 rounded-lg">
                         <h2 className="text-lg text-white font-extrabold title-font mb-2">
-                          01
+                          0{index+1}
                         </h2>
-                        <p className="leading-relaxed text-base">IC Engines</p>
+                        <p className="leading-relaxed text-base">{item}</p>
                       </div>
                     </div>
-                    <div className="xl:w-1/3 md:w-1/2 w-full p-4">
-                      <div className="border border-gray-700 border-opacity-75 p-6 rounded-lg">
-                        <h2 className="text-lg text-white font-extrabold title-font mb-2">
-                          02
-                        </h2>
-                        <p className="leading-relaxed text-base">
-                          Heat Transfer & CFD
-                        </p>
-                      </div>
-                    </div>
-                    <div className="xl:w-1/3 md:w-1/2 w-full p-4">
-                      <div className="border border-gray-700 border-opacity-75 p-6 rounded-lg">
-                        <h2 className="text-lg text-white font-extrabold title-font mb-2">
-                          03
-                        </h2>
-                        <p className="leading-relaxed text-base">
-                          Numerical Modeling
-                        </p>
-                      </div>
-                    </div>
-                    <div className="xl:w-1/3 md:w-1/2 w-full p-4">
-                      <div className="border border-gray-700 border-opacity-75 p-6 rounded-lg">
-                        <h2 className="text-lg text-white font-extrabold title-font mb-2">
-                          04
-                        </h2>
-                        <p className="leading-relaxed text-base">
-                          Thermodynamics
-                        </p>
-                      </div>
-                    </div>
-                    <div className="xl:w-1/3 md:w-1/2 w-full p-4">
-                      <div className="border border-gray-700 border-opacity-75 p-6 rounded-lg">
-                        <h2 className="text-lg text-white font-extrabold title-font mb-2">
-                          05
-                        </h2>
-                        <p className="leading-relaxed text-base">
-                          Cryogenic Engineering
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="xl:w-1/3 md:w-1/2 w-full p-4">
-                      <div className="border border-gray-700 border-opacity-75 p-6 rounded-lg">
-                        <h2 className="text-lg text-white font-extrabold title-font mb-2">
-                          06
-                        </h2>
-                        <p className="leading-relaxed text-base">
-                          CAE & CAD Design
-                        </p>
-                      </div>
-                    </div>
-                    <div className="xl:w-1/3 md:w-1/2 w-full p-4">
-                      <div className="border border-gray-700 border-opacity-75 p-6 rounded-lg">
-                        <h2 className="text-lg text-white font-extrabold title-font mb-2">
-                          07
-                        </h2>
-                        <p className="leading-relaxed text-base">
-                          Waste Heat Recovery Systems
-                        </p>
-                      </div>
-                    </div>
-                    <div className="xl:w-1/3 md:w-1/2 w-full p-4">
-                      <div className="border border-gray-700 border-opacity-75 p-6 rounded-lg">
-                        <h2 className="text-lg text-white font-extrabold title-font mb-2">
-                          08
-                        </h2>
-                        <p className="leading-relaxed text-base">
-                          PCM-based Energy Storage Systems
-                        </p>
-                      </div>
-                    </div>
-                    <div className="xl:w-1/3 md:w-1/2 w-full p-4">
-                      <div className="border border-gray-700 border-opacity-75 p-6 rounded-lg">
-                        <h2 className="text-lg text-white font-extrabold title-font mb-2">
-                          09
-                        </h2>
-                        <p className="leading-relaxed text-base">
-                          Design & dynamics of Heat Exchangers
-                        </p>
-                      </div>
-                    </div>
+                        )
+                      })
+                    }
                   </div>
                 </div>
               </section>

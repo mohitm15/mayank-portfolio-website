@@ -11,6 +11,8 @@ import {
 import { motion } from "framer-motion";
 
 const Skills = () => {
+
+  let sym = "SiPython"
   return (
     <>
     <motion.div
