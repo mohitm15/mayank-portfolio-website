@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 const CourseTable = (props) => {
   let course = props?.data?.sem;
-  //console.log(props.data);
-  //console.log("course = ", course);
+  console.log(props.data);
+  console.log("course = ", course);
 
   return (
     <motion.div
