@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const CourseTable = (props) => {
-  let course = props.data.sem;
+  let course = props?.data?.sem;
   //console.log(props.data);
   //console.log("course = ", course);
 
